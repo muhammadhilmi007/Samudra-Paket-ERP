@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@samudra-paket/ui/*": ["packages/ui/src/*"],
+      "@samudra-paket/config/*": ["packages/config/src/*"],
+      "@samudra-paket/utils/*": ["packages/utils/src/*"],
+      "@samudra-paket/api-client/*": ["packages/api-client/src/*"],
+      "@samudra-paket/logger/*": ["packages/logger/src/*"],
+      "@samudra-paket/validation/*": ["packages/validation/src/*"],
+      "@samudra-paket/types/*": ["packages/types/src/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx"]
+}
