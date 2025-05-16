@@ -18,3 +18,18 @@
 2025-05-16T10:14:47.983202Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
 2025-05-16T10:14:53.085791Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\99404b400df704b0-turbo.log.2025-05-16")}
 2025-05-16T10:14:53.085806Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-05-16T10:14:58.187607Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\99404b400df704b0-turbo.log.2025-05-16")}
+2025-05-16T10:14:58.187633Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-05-16T10:15:01.288502Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\99404b400df704b0-turbo.log.2025-05-16")}
+2025-05-16T10:15:01.288538Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-05-16T10:15:05.874882Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\99404b400df704b0-turbo.log.2025-05-16")}
+2025-05-16T10:15:05.874895Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-05-16T10:15:45.743486Z  INFO turborepo_lib::daemon::server: triggering shutdown
+2025-05-16T12:35:20.728568Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-05-16T12:41:45.313671Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-05-16T12:48:19.631768Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-05-16T13:25:53.765144Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-05-16T13:26:39.111426Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-05-16T13:42:19.563369Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-05-16T13:48:26.791645Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-05-16T13:49:36.310535Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running

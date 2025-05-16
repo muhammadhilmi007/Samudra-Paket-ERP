@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --primary-color: 37, 99, 235;
+  --secondary-color: 16, 185, 129;
+  --success-color: 34, 197, 94;
+  --warning-color: 245, 158, 11;
+  --error-color: 239, 68, 68;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer base {
+  h1 {
+    @apply text-3xl font-bold md:text-4xl;
+  }
+  h2 {
+    @apply text-2xl font-bold md:text-3xl;
+  }
+  h3 {
+    @apply text-xl font-bold md:text-2xl;
+  }
+  h4 {
+    @apply text-lg font-bold md:text-xl;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
+  .btn-secondary {
+    @apply bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded;
+  }
+  .btn-success {
+    @apply bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded;
+  }
+  .btn-warning {
+    @apply bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded;
+  }
+  .btn-error {
+    @apply bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded;
+  }
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md p-6;
+  }
+  .input {
+    @apply border border-gray-300 dark:border-gray-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700;
+  }
+}

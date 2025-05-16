@@ -84,6 +84,6 @@ jobs:
       - name: Deploy to Railway
         run: railway up
         env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-          RAILWAY_PROJECT_ID: ${{ secrets.RAILWAY_PROJECT_ID }}
+          RAILWAY_TOKEN: ace027f7-788a-4132-ab3d-56a98a2a31be
+          RAILWAY_PROJECT_ID: 642f1178-1ca2-4d17-ab4d-e39eefbcdd1a
           RAILWAY_ENVIRONMENT: ${{ github.ref == 'refs/heads/main' && 'production' || 'development' }}

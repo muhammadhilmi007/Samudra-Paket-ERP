@@ -8,14 +8,14 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "turbo run dev --concurrency=16",
     "lint": "turbo run lint",
     "test": "turbo run test",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
   },
   "devDependencies": {
     "prettier": "^2.8.8",
-    "turbo": "^1.10.16"
+    "turbo": "^2.5.3"
   },
   "engines": {
     "node": ">=18.0.0"
