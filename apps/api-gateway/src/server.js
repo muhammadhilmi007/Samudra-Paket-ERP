@@ -4,12 +4,36 @@
  */
 
 const express = require('express');
-const cors = require('cors');
-const helmet = require('helmet');
 const compression = require('compression');
-const rateLimit = require('express-rate-limit');
-const { createProxyMiddleware } = require('http-proxy-middleware');
 const dotenv = require('dotenv');
+
+// Import middleware modules
+const {
+  authenticateJWT,
+  cacheMiddleware,
+  createCircuitBreakerProxy,
+  notFoundHandler,
+  errorHandler,
+  logger,
+  requestTracingMiddleware,
+  requestLoggingMiddleware,
+  errorLoggingMiddleware,
+  validateRequest,
+  securityHeadersMiddleware,
+  rateLimitMiddleware,
+  corsMiddleware
+} = require('./api/middlewares');
+
+// Import configuration modules
+const {
+  configureSwagger,
+  configureMonitoring,
+  configureMetricsEndpoint
+} = require('./config');
+
+// Import routes
+const { configureRoutes } = require('./api/routes');
+const healthRoutes = require('./api/routes/healthRoutes');
 
 // Load environment variables
 dotenv.config();
@@ -18,93 +42,50 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Apply middleware
-app.use(helmet()); // Security headers
-app.use(cors()); // CORS
+// Request tracing middleware
+app.use(requestTracingMiddleware);
+
+// Logging middleware
+app.use(requestLoggingMiddleware);
+
+// Configure monitoring
+const { metricsMiddleware } = configureMonitoring();
+app.use(metricsMiddleware);
+
+// Apply security middleware
+app.use(securityHeadersMiddleware); // Security headers
+app.use(corsMiddleware); // CORS configuration
+app.use(rateLimitMiddleware); // Rate limiting
+
+// Apply common middleware
 app.use(compression()); // Compression
 app.use(express.json()); // Parse JSON bodies
+app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 
-// Rate limiting
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // Limit each IP to 100 requests per windowMs
-  standardHeaders: true,
-  legacyHeaders: false,
-});
-app.use(limiter);
+// Configure Swagger API documentation
+configureSwagger(app, PORT);
 
-// Health check endpoint
-app.get('/health', (req, res) => {
-  res.status(200).json({ status: 'ok', service: 'api-gateway' });
-});
+// Configure metrics endpoint
+configureMetricsEndpoint(app);
 
-// Service routes
-// Auth Service
-app.use('/api/auth', createProxyMiddleware({
-  target: process.env.AUTH_SERVICE_URL || 'http://localhost:3001',
-  changeOrigin: true,
-  pathRewrite: {
-    '^/api/auth': '/api',
-  },
-}));
+// Health check routes
+app.use('/health', healthRoutes);
 
-// Core Service
-app.use('/api/core', createProxyMiddleware({
-  target: process.env.CORE_SERVICE_URL || 'http://localhost:3002',
-  changeOrigin: true,
-  pathRewrite: {
-    '^/api/core': '/api',
-  },
-}));
+// Configure API routes
+configureRoutes(app);
 
-// Operations Service
-app.use('/api/operations', createProxyMiddleware({
-  target: process.env.OPERATIONS_SERVICE_URL || 'http://localhost:3003',
-  changeOrigin: true,
-  pathRewrite: {
-    '^/api/operations': '/api',
-  },
-}));
+// 404 handler
+app.use(notFoundHandler);
 
-// Finance Service
-app.use('/api/finance', createProxyMiddleware({
-  target: process.env.FINANCE_SERVICE_URL || 'http://localhost:3004',
-  changeOrigin: true,
-  pathRewrite: {
-    '^/api/finance': '/api',
-  },
-}));
+// Error logging middleware
+app.use(errorLoggingMiddleware);
 
-// Notification Service
-app.use('/api/notifications', createProxyMiddleware({
-  target: process.env.NOTIFICATION_SERVICE_URL || 'http://localhost:3005',
-  changeOrigin: true,
-  pathRewrite: {
-    '^/api/notifications': '/api',
-  },
-}));
-
-// Reporting Service
-app.use('/api/reports', createProxyMiddleware({
-  target: process.env.REPORTING_SERVICE_URL || 'http://localhost:3006',
-  changeOrigin: true,
-  pathRewrite: {
-    '^/api/reports': '/api',
-  },
-}));
-
-// Error handling middleware
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).json({
-    status: 'error',
-    message: 'Internal Server Error',
-  });
-});
+// Standardized error handling middleware
+app.use(errorHandler);
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`API Gateway running on port ${PORT}`);
+  logger.info(`API Gateway running on port ${PORT}`);
 });
 
 module.exports = app;

@@ -1,0 +1,538 @@
+{
+  "info": {
+    "name": "Samudra Paket ERP API",
+    "description": "API documentation for Samudra Paket ERP system",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Authentication",
+      "description": "Authentication endpoints",
+      "item": [
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"admin\",\n  \"password\": \"password123\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/auth/login",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "auth", "login"]
+            },
+            "description": "Authenticate user and get access token"
+          },
+          "response": [
+            {
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"username\": \"admin\",\n  \"password\": \"password123\"\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/auth/login",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["api", "v1", "auth", "login"]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...\",\n  \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...\",\n  \"user\": {\n    \"id\": \"1\",\n    \"username\": \"admin\",\n    \"email\": \"admin@example.com\",\n    \"role\": \"admin\"\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"newuser\",\n  \"email\": \"newuser@example.com\",\n  \"password\": \"password123\",\n  \"role\": \"customer\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/auth/register",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "auth", "register"]
+            },
+            "description": "Register a new user"
+          },
+          "response": []
+        },
+        {
+          "name": "Refresh Token",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/auth/refresh-token",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "auth", "refresh-token"]
+            },
+            "description": "Refresh access token using refresh token"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Core",
+      "description": "Core service endpoints",
+      "item": [
+        {
+          "name": "Get Customers",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{accessToken}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/core/customers",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "core", "customers"]
+            },
+            "description": "Get all customers"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Customer by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{accessToken}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/core/customers/:id",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "core", "customers", ":id"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            },
+            "description": "Get customer by ID"
+          },
+          "response": []
+        },
+        {
+          "name": "Create Customer",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{accessToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"John Doe\",\n  \"phone\": \"+6281234567890\",\n  \"email\": \"john.doe@example.com\",\n  \"address\": {\n    \"street\": \"Jl. Sudirman No. 123\",\n    \"city\": \"Jakarta\",\n    \"province\": \"DKI Jakarta\",\n    \"postalCode\": \"12345\",\n    \"country\": \"Indonesia\"\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/core/customers",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "core", "customers"]
+            },
+            "description": "Create a new customer"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Operations",
+      "description": "Operations service endpoints",
+      "item": [
+        {
+          "name": "Get Shipments",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{accessToken}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/operations/shipments",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "operations", "shipments"]
+            },
+            "description": "Get all shipments"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Shipment by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{accessToken}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/operations/shipments/:id",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "operations", "shipments", ":id"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            },
+            "description": "Get shipment by ID"
+          },
+          "response": []
+        },
+        {
+          "name": "Track Shipment",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/operations/shipments/tracking/:trackingNumber",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "operations", "shipments", "tracking", ":trackingNumber"],
+              "variable": [
+                {
+                  "key": "trackingNumber",
+                  "value": "SP2305001"
+                }
+              ]
+            },
+            "description": "Track shipment by tracking number"
+          },
+          "response": []
+        },
+        {
+          "name": "Create Shipment",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{accessToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sender\": {\n    \"id\": \"1\",\n    \"name\": \"John Doe\",\n    \"phone\": \"+6281234567890\",\n    \"address\": {\n      \"street\": \"Jl. Sudirman No. 123\",\n      \"city\": \"Jakarta\",\n      \"province\": \"DKI Jakarta\",\n      \"postalCode\": \"12345\",\n      \"country\": \"Indonesia\"\n    }\n  },\n  \"recipient\": {\n    \"name\": \"Jane Smith\",\n    \"phone\": \"+6287654321098\",\n    \"address\": {\n      \"street\": \"Jl. Gatot Subroto No. 456\",\n      \"city\": \"Surabaya\",\n      \"province\": \"Jawa Timur\",\n      \"postalCode\": \"54321\",\n      \"country\": \"Indonesia\"\n    }\n  },\n  \"weight\": 2.5,\n  \"dimensions\": {\n    \"length\": 30,\n    \"width\": 20,\n    \"height\": 10\n  },\n  \"service\": \"express\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/operations/shipments",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "operations", "shipments"]
+            },
+            "description": "Create a new shipment"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Shipment Status",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{accessToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"in_transit\",\n  \"notes\": \"Shipment has left origin warehouse\",\n  \"location\": \"Jakarta Sorting Center\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/operations/shipments/:id/status",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "operations", "shipments", ":id", "status"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            },
+            "description": "Update shipment status"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Finance",
+      "description": "Finance service endpoints",
+      "item": [
+        {
+          "name": "Get Invoices",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{accessToken}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/finance/invoices",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "finance", "invoices"]
+            },
+            "description": "Get all invoices"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Payments",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{accessToken}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/finance/payments",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "finance", "payments"]
+            },
+            "description": "Get all payments"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Notifications",
+      "description": "Notification service endpoints",
+      "item": [
+        {
+          "name": "Get User Notifications",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{accessToken}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/notifications/user/:userId",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "notifications", "user", ":userId"],
+              "variable": [
+                {
+                  "key": "userId",
+                  "value": "1"
+                }
+              ]
+            },
+            "description": "Get notifications for a specific user"
+          },
+          "response": []
+        },
+        {
+          "name": "Send Notification",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{accessToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": \"1\",\n  \"type\": \"in_app\",\n  \"title\": \"Shipment Update\",\n  \"message\": \"Your shipment SP2305001 is out for delivery\",\n  \"data\": {\n    \"shipmentId\": \"1\",\n    \"trackingNumber\": \"SP2305001\"\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/notifications",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "notifications"]
+            },
+            "description": "Send a notification to a user"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Reports",
+      "description": "Reporting service endpoints",
+      "item": [
+        {
+          "name": "Generate Report",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{accessToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"operational\",\n  \"parameters\": {\n    \"startDate\": \"2023-01-01\",\n    \"endDate\": \"2023-01-31\"\n  },\n  \"format\": \"json\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/reports",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "reports"]
+            },
+            "description": "Generate a new report"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Reports",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{accessToken}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/reports",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "reports"]
+            },
+            "description": "Get all reports"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Health",
+      "description": "Health check endpoints",
+      "item": [
+        {
+          "name": "API Gateway Health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/health",
+              "host": ["{{baseUrl}}"],
+              "path": ["health"]
+            },
+            "description": "Check API Gateway health"
+          },
+          "response": []
+        },
+        {
+          "name": "Services Health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/health/services",
+              "host": ["{{baseUrl}}"],
+              "path": ["health", "services"]
+            },
+            "description": "Check health of all services"
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    },
+    {
+      "key": "accessToken",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}
