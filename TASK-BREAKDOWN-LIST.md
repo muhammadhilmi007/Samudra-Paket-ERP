@@ -165,45 +165,45 @@ Checklist ini disusun berdasarkan fase implementasi (Backend → Frontend → Mo
 - [x] Buatkan Seeder untuk user dan role admin
 
 #### Role & Authorization Service
-- [ ] Desain dan implementasi database schema untuk roles dan permissions dengan granular control
-  - [ ] Implementasi model Role dengan fields untuk name, description, dan hierarchy
-  - [ ] Implementasi model Permission dengan fields untuk resource, action, dan constraints
-  - [ ] Implementasi model RolePermission untuk many-to-many relationship
-  - [ ] Implementasi model UserRole untuk user-role assignments
-- [ ] Implementasi RBAC (Role-Based Access Control) dengan hierarchical roles
-  - [ ] Implementasi role hierarchy dengan inheritance
-  - [ ] Implementasi permission aggregation dari parent roles
-- [ ] Implementasi permission-based authorization dengan resource ownership validation
-  - [ ] Implementasi permission checking service
-  - [ ] Implementasi resource ownership validation
-- [ ] Implementasi middleware untuk permission checking pada API routes
-  - [ ] Implementasi route protection middleware
-  - [ ] Implementasi permission requirement annotation
-- [ ] Implementasi role management endpoints (CRUD) dengan validation
-  - [ ] Implementasi role creation endpoint
-  - [ ] Implementasi role update endpoint
-  - [ ] Implementasi role deletion endpoint dengan validation
-- [ ] Implementasi permission assignment endpoints dengan validation
-  - [ ] Implementasi permission assignment to roles
-  - [ ] Implementasi role assignment to users
-- [ ] Implementasi role inheritance dan permission aggregation
-  - [ ] Implementasi permission resolution algorithm
-  - [ ] Implementasi efficient permission caching
-- [ ] Implementasi dynamic permission evaluation
-  - [ ] Implementasi context-aware permission checking
-  - [ ] Implementasi conditional permissions
-- [ ] Implementasi role-based UI component rendering
-  - [ ] Implementasi permission-based component visibility
-  - [ ] Implementasi client-side permission checking
-- [ ] Implementasi audit logging untuk authorization changes
-  - [ ] Logging role creation, modification, dan deletion
-  - [ ] Logging permission assignments dan revocations
-  - [ ] Logging user role changes
-- [ ] Unit testing untuk authorization logic
-- [ ] Integration testing untuk role and permission management
-- [ ] Implementasi API documentation dengan Swagger/OpenAPI
-- [ ] Implementasi API documentation dengan Postman
-- [ ] Implementasi seeder untuk role admin
+- [x] Desain dan implementasi database schema untuk roles dan permissions dengan granular control
+  - [x] Implementasi model Role dengan fields untuk name, description, dan hierarchy
+  - [x] Implementasi model Permission dengan fields untuk resource, action, dan constraints
+  - [x] Implementasi model RolePermission untuk many-to-many relationship
+  - [x] Implementasi model UserRole untuk user-role assignments
+- [x] Implementasi RBAC (Role-Based Access Control) dengan hierarchical roles
+  - [x] Implementasi role hierarchy dengan inheritance
+  - [x] Implementasi permission aggregation dari parent roles
+- [x] Implementasi permission-based authorization dengan resource ownership validation
+  - [x] Implementasi permission checking service
+  - [x] Implementasi resource ownership validation
+- [x] Implementasi middleware untuk permission checking pada API routes
+  - [x] Implementasi route protection middleware
+  - [x] Implementasi permission requirement annotation
+- [x] Implementasi role management endpoints (CRUD) dengan validation
+  - [x] Implementasi role creation endpoint
+  - [x] Implementasi role update endpoint
+  - [x] Implementasi role deletion endpoint dengan validation
+- [x] Implementasi permission assignment endpoints dengan validation
+  - [x] Implementasi permission assignment to roles
+  - [x] Implementasi role assignment to users
+- [x] Implementasi role inheritance dan permission aggregation
+  - [x] Implementasi permission resolution algorithm
+  - [x] Implementasi efficient permission caching
+- [x] Implementasi dynamic permission evaluation
+  - [x] Implementasi context-aware permission checking
+  - [x] Implementasi conditional permissions
+- [x] Implementasi role-based UI component rendering
+  - [x] Implementasi permission-based component visibility
+  - [x] Implementasi client-side permission checking
+- [x] Implementasi audit logging untuk authorization changes
+  - [x] Logging role creation, modification, dan deletion
+  - [x] Logging permission assignments dan revocations
+  - [x] Logging user role changes
+- [x] Unit testing untuk authorization logic
+- [x] Integration testing untuk role and permission management
+- [x] Implementasi API documentation dengan Swagger/OpenAPI
+- [x] Implementasi API documentation dengan Postman
+- [x] Implementasi seeder untuk role admin
 
 ### C. Backend: Modul Manajemen Cabang & Divisi
 

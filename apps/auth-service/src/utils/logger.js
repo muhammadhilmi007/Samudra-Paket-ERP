@@ -17,7 +17,7 @@ const logFormat = winston.format.combine(
 
 // Create logger instance
 const logger = winston.createLogger({
-  level: config.logging.level,
+  level: config.logging?.level || 'info',
   format: logFormat,
   defaultMeta: { service: 'auth-service' },
   transports: [

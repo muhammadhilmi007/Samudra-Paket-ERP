@@ -3,8 +3,14 @@
  * Exports all validators
  */
 
-const authValidators = require('./authValidators');
+const authValidation = require('./authValidators');
+const roleValidation = require('./roleValidation');
+const permissionValidation = require('./permissionValidation');
+const userRoleValidation = require('./userRoleValidation');
 
 module.exports = {
-  authValidators
+  authValidation,
+  roleValidation,
+  permissionValidation,
+  userRoleValidation
 };

@@ -10,6 +10,9 @@ const {
   createCircuitBreakerProxy 
 } = require('../middlewares');
 const authRoutes = require('./authRoutes');
+const roleRoutes = require('./roleRoutes');
+const permissionRoutes = require('./permissionRoutes');
+const userRoleRoutes = require('./userRoleRoutes');
 
 /**
  * Configure API routes for the gateway
@@ -20,11 +23,16 @@ const configureRoutes = (app) => {
   // v1 API routes
   const v1Router = express.Router();
 
-  // Auth Service
+  // Auth Service - Direct proxy
   v1Router.use('/auth', cacheMiddleware, createCircuitBreakerProxy(
     process.env.AUTH_SERVICE_URL || 'http://localhost:3001',
     { '^/auth': '/api' }
   ));
+  
+  // Auth Service - Specific routes
+  v1Router.use('/auth/roles', roleRoutes);
+  v1Router.use('/auth/permissions', permissionRoutes);
+  v1Router.use('/auth/user-roles', userRoleRoutes);
 
   // Core Service
   v1Router.use('/core', authenticateJWT, cacheMiddleware, createCircuitBreakerProxy(

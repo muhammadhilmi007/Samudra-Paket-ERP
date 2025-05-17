@@ -91,3 +91,293 @@
 {"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 10:19:00"}
 {"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 10:19:50"}
 {"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 10:32:30"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 12:38:25"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 12:40:59"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 12:52:01"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 12:52:10"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 12:52:18"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 12:54:12"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 13:12:05"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 13:13:32"}
+{"level":"info","message":"Starting role and permission seeder...","service":"auth-service","timestamp":"2025-05-17 13:20:16"}
+{"level":"info","message":"Creating default permissions...","service":"auth-service","timestamp":"2025-05-17 13:20:16"}
+{"level":"info","message":"Created permission: users:create","service":"auth-service","timestamp":"2025-05-17 13:20:16"}
+{"level":"info","message":"Created permission: users:read","service":"auth-service","timestamp":"2025-05-17 13:20:17"}
+{"level":"info","message":"Created permission: users:update","service":"auth-service","timestamp":"2025-05-17 13:20:17"}
+{"level":"info","message":"Created permission: users:delete","service":"auth-service","timestamp":"2025-05-17 13:20:17"}
+{"level":"info","message":"Created permission: users:list","service":"auth-service","timestamp":"2025-05-17 13:20:17"}
+{"level":"info","message":"Created permission: roles:create","service":"auth-service","timestamp":"2025-05-17 13:20:17"}
+{"level":"info","message":"Created permission: roles:read","service":"auth-service","timestamp":"2025-05-17 13:20:17"}
+{"level":"info","message":"Created permission: roles:update","service":"auth-service","timestamp":"2025-05-17 13:20:17"}
+{"level":"info","message":"Created permission: roles:delete","service":"auth-service","timestamp":"2025-05-17 13:20:18"}
+{"level":"info","message":"Created permission: roles:list","service":"auth-service","timestamp":"2025-05-17 13:20:18"}
+{"level":"info","message":"Created permission: permissions:create","service":"auth-service","timestamp":"2025-05-17 13:20:18"}
+{"level":"info","message":"Created permission: permissions:read","service":"auth-service","timestamp":"2025-05-17 13:20:18"}
+{"level":"info","message":"Created permission: permissions:update","service":"auth-service","timestamp":"2025-05-17 13:20:18"}
+{"level":"info","message":"Created permission: permissions:delete","service":"auth-service","timestamp":"2025-05-17 13:20:18"}
+{"level":"info","message":"Created permission: permissions:list","service":"auth-service","timestamp":"2025-05-17 13:20:18"}
+{"level":"info","message":"Created permission: user_roles:create","service":"auth-service","timestamp":"2025-05-17 13:20:18"}
+{"level":"info","message":"Created permission: user_roles:read","service":"auth-service","timestamp":"2025-05-17 13:20:19"}
+{"level":"info","message":"Created permission: user_roles:update","service":"auth-service","timestamp":"2025-05-17 13:20:19"}
+{"level":"info","message":"Created permission: user_roles:delete","service":"auth-service","timestamp":"2025-05-17 13:20:19"}
+{"level":"info","message":"Created permission: user_roles:list","service":"auth-service","timestamp":"2025-05-17 13:20:19"}
+{"level":"info","message":"Created permission: sessions:read","service":"auth-service","timestamp":"2025-05-17 13:20:19"}
+{"level":"info","message":"Created permission: sessions:revoke","service":"auth-service","timestamp":"2025-05-17 13:20:19"}
+{"level":"info","message":"Created permission: sessions:list","service":"auth-service","timestamp":"2025-05-17 13:20:19"}
+{"level":"info","message":"Created permission: security_logs:read","service":"auth-service","timestamp":"2025-05-17 13:20:19"}
+{"level":"info","message":"Created permission: security_logs:list","service":"auth-service","timestamp":"2025-05-17 13:20:19"}
+{"level":"info","message":"Created permission: shipments:create","service":"auth-service","timestamp":"2025-05-17 13:20:20"}
+{"level":"info","message":"Created permission: shipments:read","service":"auth-service","timestamp":"2025-05-17 13:20:20"}
+{"level":"info","message":"Created permission: shipments:update","service":"auth-service","timestamp":"2025-05-17 13:20:20"}
+{"level":"info","message":"Created permission: shipments:delete","service":"auth-service","timestamp":"2025-05-17 13:20:20"}
+{"level":"info","message":"Created permission: shipments:list","service":"auth-service","timestamp":"2025-05-17 13:20:20"}
+{"level":"info","message":"Created permission: shipments:track","service":"auth-service","timestamp":"2025-05-17 13:20:20"}
+{"level":"info","message":"Created permission: pickups:create","service":"auth-service","timestamp":"2025-05-17 13:20:20"}
+{"level":"info","message":"Created permission: pickups:read","service":"auth-service","timestamp":"2025-05-17 13:20:20"}
+{"level":"info","message":"Created permission: pickups:update","service":"auth-service","timestamp":"2025-05-17 13:20:21"}
+{"level":"info","message":"Created permission: pickups:delete","service":"auth-service","timestamp":"2025-05-17 13:20:21"}
+{"level":"info","message":"Created permission: pickups:list","service":"auth-service","timestamp":"2025-05-17 13:20:21"}
+{"level":"info","message":"Created permission: pickups:assign","service":"auth-service","timestamp":"2025-05-17 13:20:21"}
+{"level":"info","message":"Created permission: pickups:complete","service":"auth-service","timestamp":"2025-05-17 13:20:21"}
+{"level":"info","message":"Created permission: deliveries:create","service":"auth-service","timestamp":"2025-05-17 13:20:21"}
+{"level":"info","message":"Created permission: deliveries:read","service":"auth-service","timestamp":"2025-05-17 13:20:21"}
+{"level":"info","message":"Created permission: deliveries:update","service":"auth-service","timestamp":"2025-05-17 13:20:22"}
+{"level":"info","message":"Created permission: deliveries:delete","service":"auth-service","timestamp":"2025-05-17 13:20:22"}
+{"level":"info","message":"Created permission: deliveries:list","service":"auth-service","timestamp":"2025-05-17 13:20:22"}
+{"level":"info","message":"Created permission: deliveries:assign","service":"auth-service","timestamp":"2025-05-17 13:20:22"}
+{"level":"info","message":"Created permission: deliveries:complete","service":"auth-service","timestamp":"2025-05-17 13:20:22"}
+{"level":"info","message":"Created permission: payments:create","service":"auth-service","timestamp":"2025-05-17 13:20:22"}
+{"level":"info","message":"Created permission: payments:read","service":"auth-service","timestamp":"2025-05-17 13:20:22"}
+{"level":"info","message":"Created permission: payments:update","service":"auth-service","timestamp":"2025-05-17 13:20:23"}
+{"level":"info","message":"Created permission: payments:delete","service":"auth-service","timestamp":"2025-05-17 13:20:23"}
+{"level":"info","message":"Created permission: payments:list","service":"auth-service","timestamp":"2025-05-17 13:20:23"}
+{"level":"info","message":"Created permission: payments:process","service":"auth-service","timestamp":"2025-05-17 13:20:23"}
+{"level":"info","message":"Created permission: reports:generate","service":"auth-service","timestamp":"2025-05-17 13:20:23"}
+{"level":"info","message":"Created permission: reports:read","service":"auth-service","timestamp":"2025-05-17 13:20:23"}
+{"level":"info","message":"Created permission: reports:export","service":"auth-service","timestamp":"2025-05-17 13:20:23"}
+{"level":"info","message":"Created permission: reports:list","service":"auth-service","timestamp":"2025-05-17 13:20:23"}
+{"level":"info","message":"Creating default roles...","service":"auth-service","timestamp":"2025-05-17 13:20:23"}
+{"level":"info","message":"Created role: admin","service":"auth-service","timestamp":"2025-05-17 13:20:23"}
+{"level":"info","message":"Created role: manager","service":"auth-service","timestamp":"2025-05-17 13:20:24"}
+{"level":"info","message":"Created role: courier","service":"auth-service","timestamp":"2025-05-17 13:20:24"}
+{"level":"info","message":"Created role: driver","service":"auth-service","timestamp":"2025-05-17 13:20:24"}
+{"level":"info","message":"Created role: warehouse","service":"auth-service","timestamp":"2025-05-17 13:20:24"}
+{"level":"info","message":"Created role: collector","service":"auth-service","timestamp":"2025-05-17 13:20:24"}
+{"level":"info","message":"Created role: customer","service":"auth-service","timestamp":"2025-05-17 13:20:24"}
+{"level":"info","message":"Updated role manager with parent admin","service":"auth-service","timestamp":"2025-05-17 13:20:24"}
+{"level":"info","message":"Updated role courier with parent manager","service":"auth-service","timestamp":"2025-05-17 13:20:24"}
+{"level":"info","message":"Updated role driver with parent manager","service":"auth-service","timestamp":"2025-05-17 13:20:24"}
+{"level":"info","message":"Updated role warehouse with parent manager","service":"auth-service","timestamp":"2025-05-17 13:20:24"}
+{"level":"info","message":"Updated role collector with parent manager","service":"auth-service","timestamp":"2025-05-17 13:20:24"}
+{"level":"info","message":"Assigning permissions to roles...","service":"auth-service","timestamp":"2025-05-17 13:20:24"}
+{"level":"info","message":"Assigned permission users:create to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:24"}
+{"level":"info","message":"Assigned permission users:read to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:25"}
+{"level":"info","message":"Assigned permission users:update to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:25"}
+{"level":"info","message":"Assigned permission users:delete to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:25"}
+{"level":"info","message":"Assigned permission users:list to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:25"}
+{"level":"info","message":"Assigned permission roles:create to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:25"}
+{"level":"info","message":"Assigned permission roles:read to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:25"}
+{"level":"info","message":"Assigned permission roles:update to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:25"}
+{"level":"info","message":"Assigned permission roles:delete to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:25"}
+{"level":"info","message":"Assigned permission roles:list to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:25"}
+{"level":"info","message":"Assigned permission permissions:create to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:25"}
+{"level":"info","message":"Assigned permission permissions:read to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:26"}
+{"level":"info","message":"Assigned permission permissions:update to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:26"}
+{"level":"info","message":"Assigned permission permissions:delete to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:26"}
+{"level":"info","message":"Assigned permission permissions:list to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:26"}
+{"level":"info","message":"Assigned permission user_roles:create to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:26"}
+{"level":"info","message":"Assigned permission user_roles:read to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:26"}
+{"level":"info","message":"Assigned permission user_roles:update to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:26"}
+{"level":"info","message":"Assigned permission user_roles:delete to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:26"}
+{"level":"info","message":"Assigned permission user_roles:list to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:27"}
+{"level":"info","message":"Assigned permission sessions:read to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:27"}
+{"level":"info","message":"Assigned permission sessions:revoke to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:27"}
+{"level":"info","message":"Assigned permission sessions:list to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:27"}
+{"level":"info","message":"Assigned permission security_logs:read to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:27"}
+{"level":"info","message":"Assigned permission security_logs:list to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:27"}
+{"level":"info","message":"Assigned permission shipments:create to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:27"}
+{"level":"info","message":"Assigned permission shipments:read to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:27"}
+{"level":"info","message":"Assigned permission shipments:update to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:27"}
+{"level":"info","message":"Assigned permission shipments:delete to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:28"}
+{"level":"info","message":"Assigned permission shipments:list to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:28"}
+{"level":"info","message":"Assigned permission shipments:track to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:28"}
+{"level":"info","message":"Assigned permission pickups:create to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:28"}
+{"level":"info","message":"Assigned permission pickups:read to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:28"}
+{"level":"info","message":"Assigned permission pickups:update to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:28"}
+{"level":"info","message":"Assigned permission pickups:delete to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:28"}
+{"level":"info","message":"Assigned permission pickups:list to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:29"}
+{"level":"info","message":"Assigned permission pickups:assign to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:29"}
+{"level":"info","message":"Assigned permission pickups:complete to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:29"}
+{"level":"info","message":"Assigned permission deliveries:create to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:29"}
+{"level":"info","message":"Assigned permission deliveries:read to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:29"}
+{"level":"info","message":"Assigned permission deliveries:update to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:29"}
+{"level":"info","message":"Assigned permission deliveries:delete to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:29"}
+{"level":"info","message":"Assigned permission deliveries:list to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:29"}
+{"level":"info","message":"Assigned permission deliveries:assign to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:29"}
+{"level":"info","message":"Assigned permission deliveries:complete to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:29"}
+{"level":"info","message":"Assigned permission payments:create to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:30"}
+{"level":"info","message":"Assigned permission payments:read to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:30"}
+{"level":"info","message":"Assigned permission payments:update to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:30"}
+{"level":"info","message":"Assigned permission payments:delete to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:30"}
+{"level":"info","message":"Assigned permission payments:list to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:30"}
+{"level":"info","message":"Assigned permission payments:process to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:30"}
+{"level":"info","message":"Assigned permission reports:generate to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:30"}
+{"level":"info","message":"Assigned permission reports:read to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:30"}
+{"level":"info","message":"Assigned permission reports:export to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:30"}
+{"level":"info","message":"Assigned permission reports:list to role admin","service":"auth-service","timestamp":"2025-05-17 13:20:30"}
+{"level":"info","message":"Assigned permission users:read to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:31"}
+{"level":"info","message":"Assigned permission users:update to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:31"}
+{"level":"info","message":"Assigned permission users:list to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:31"}
+{"level":"info","message":"Assigned permission roles:read to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:31"}
+{"level":"info","message":"Assigned permission roles:list to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:31"}
+{"level":"info","message":"Assigned permission permissions:read to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:31"}
+{"level":"info","message":"Assigned permission permissions:list to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:31"}
+{"level":"info","message":"Assigned permission user_roles:read to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:31"}
+{"level":"info","message":"Assigned permission user_roles:list to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:32"}
+{"level":"info","message":"Assigned permission sessions:read to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:32"}
+{"level":"info","message":"Assigned permission sessions:revoke to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:32"}
+{"level":"info","message":"Assigned permission sessions:list to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:32"}
+{"level":"info","message":"Assigned permission security_logs:read to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:32"}
+{"level":"info","message":"Assigned permission security_logs:list to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:32"}
+{"level":"info","message":"Assigned permission shipments:create to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:32"}
+{"level":"info","message":"Assigned permission shipments:read to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:32"}
+{"level":"info","message":"Assigned permission shipments:update to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:33"}
+{"level":"info","message":"Assigned permission shipments:delete to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:33"}
+{"level":"info","message":"Assigned permission shipments:list to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:33"}
+{"level":"info","message":"Assigned permission shipments:track to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:33"}
+{"level":"info","message":"Assigned permission pickups:create to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:33"}
+{"level":"info","message":"Assigned permission pickups:read to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:33"}
+{"level":"info","message":"Assigned permission pickups:update to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:33"}
+{"level":"info","message":"Assigned permission pickups:delete to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:33"}
+{"level":"info","message":"Assigned permission pickups:list to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:34"}
+{"level":"info","message":"Assigned permission pickups:assign to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:34"}
+{"level":"info","message":"Assigned permission pickups:complete to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:34"}
+{"level":"info","message":"Assigned permission deliveries:create to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:34"}
+{"level":"info","message":"Assigned permission deliveries:read to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:34"}
+{"level":"info","message":"Assigned permission deliveries:update to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:34"}
+{"level":"info","message":"Assigned permission deliveries:delete to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:34"}
+{"level":"info","message":"Assigned permission deliveries:list to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:34"}
+{"level":"info","message":"Assigned permission deliveries:assign to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:35"}
+{"level":"info","message":"Assigned permission deliveries:complete to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:35"}
+{"level":"info","message":"Assigned permission payments:create to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:35"}
+{"level":"info","message":"Assigned permission payments:read to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:35"}
+{"level":"info","message":"Assigned permission payments:update to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:35"}
+{"level":"info","message":"Assigned permission payments:delete to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:35"}
+{"level":"info","message":"Assigned permission payments:list to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:35"}
+{"level":"info","message":"Assigned permission payments:process to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:35"}
+{"level":"info","message":"Assigned permission reports:generate to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:35"}
+{"level":"info","message":"Assigned permission reports:read to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:36"}
+{"level":"info","message":"Assigned permission reports:export to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:36"}
+{"level":"info","message":"Assigned permission reports:list to role manager","service":"auth-service","timestamp":"2025-05-17 13:20:36"}
+{"level":"info","message":"Assigned permission users:read to role courier","service":"auth-service","timestamp":"2025-05-17 13:20:36"}
+{"level":"info","message":"Assigned permission shipments:read to role courier","service":"auth-service","timestamp":"2025-05-17 13:20:36"}
+{"level":"info","message":"Assigned permission shipments:update to role courier","service":"auth-service","timestamp":"2025-05-17 13:20:36"}
+{"level":"info","message":"Assigned permission shipments:list to role courier","service":"auth-service","timestamp":"2025-05-17 13:20:36"}
+{"level":"info","message":"Assigned permission shipments:track to role courier","service":"auth-service","timestamp":"2025-05-17 13:20:36"}
+{"level":"info","message":"Assigned permission pickups:read to role courier","service":"auth-service","timestamp":"2025-05-17 13:20:36"}
+{"level":"info","message":"Assigned permission pickups:update to role courier","service":"auth-service","timestamp":"2025-05-17 13:20:37"}
+{"level":"info","message":"Assigned permission pickups:list to role courier","service":"auth-service","timestamp":"2025-05-17 13:20:37"}
+{"level":"info","message":"Assigned permission pickups:complete to role courier","service":"auth-service","timestamp":"2025-05-17 13:20:37"}
+{"level":"info","message":"Assigned permission sessions:read to role courier","service":"auth-service","timestamp":"2025-05-17 13:20:37"}
+{"level":"info","message":"Assigned permission security_logs:read to role courier","service":"auth-service","timestamp":"2025-05-17 13:20:37"}
+{"level":"info","message":"Assigned permission users:read to role driver","service":"auth-service","timestamp":"2025-05-17 13:20:37"}
+{"level":"info","message":"Assigned permission shipments:read to role driver","service":"auth-service","timestamp":"2025-05-17 13:20:37"}
+{"level":"info","message":"Assigned permission shipments:update to role driver","service":"auth-service","timestamp":"2025-05-17 13:20:37"}
+{"level":"info","message":"Assigned permission shipments:list to role driver","service":"auth-service","timestamp":"2025-05-17 13:20:38"}
+{"level":"info","message":"Assigned permission shipments:track to role driver","service":"auth-service","timestamp":"2025-05-17 13:20:38"}
+{"level":"info","message":"Assigned permission deliveries:read to role driver","service":"auth-service","timestamp":"2025-05-17 13:20:38"}
+{"level":"info","message":"Assigned permission deliveries:update to role driver","service":"auth-service","timestamp":"2025-05-17 13:20:38"}
+{"level":"info","message":"Assigned permission deliveries:list to role driver","service":"auth-service","timestamp":"2025-05-17 13:20:38"}
+{"level":"info","message":"Assigned permission deliveries:complete to role driver","service":"auth-service","timestamp":"2025-05-17 13:20:38"}
+{"level":"info","message":"Assigned permission sessions:read to role driver","service":"auth-service","timestamp":"2025-05-17 13:20:38"}
+{"level":"info","message":"Assigned permission security_logs:read to role driver","service":"auth-service","timestamp":"2025-05-17 13:20:38"}
+{"level":"info","message":"Assigned permission users:read to role warehouse","service":"auth-service","timestamp":"2025-05-17 13:20:38"}
+{"level":"info","message":"Assigned permission shipments:read to role warehouse","service":"auth-service","timestamp":"2025-05-17 13:20:39"}
+{"level":"info","message":"Assigned permission shipments:update to role warehouse","service":"auth-service","timestamp":"2025-05-17 13:20:39"}
+{"level":"info","message":"Assigned permission shipments:list to role warehouse","service":"auth-service","timestamp":"2025-05-17 13:20:39"}
+{"level":"info","message":"Assigned permission shipments:track to role warehouse","service":"auth-service","timestamp":"2025-05-17 13:20:39"}
+{"level":"info","message":"Assigned permission pickups:read to role warehouse","service":"auth-service","timestamp":"2025-05-17 13:20:39"}
+{"level":"info","message":"Assigned permission pickups:list to role warehouse","service":"auth-service","timestamp":"2025-05-17 13:20:39"}
+{"level":"info","message":"Assigned permission deliveries:read to role warehouse","service":"auth-service","timestamp":"2025-05-17 13:20:39"}
+{"level":"info","message":"Assigned permission deliveries:list to role warehouse","service":"auth-service","timestamp":"2025-05-17 13:20:39"}
+{"level":"info","message":"Assigned permission sessions:read to role warehouse","service":"auth-service","timestamp":"2025-05-17 13:20:39"}
+{"level":"info","message":"Assigned permission security_logs:read to role warehouse","service":"auth-service","timestamp":"2025-05-17 13:20:39"}
+{"level":"info","message":"Assigned permission users:read to role collector","service":"auth-service","timestamp":"2025-05-17 13:20:40"}
+{"level":"info","message":"Assigned permission shipments:read to role collector","service":"auth-service","timestamp":"2025-05-17 13:20:40"}
+{"level":"info","message":"Assigned permission shipments:list to role collector","service":"auth-service","timestamp":"2025-05-17 13:20:40"}
+{"level":"info","message":"Assigned permission shipments:track to role collector","service":"auth-service","timestamp":"2025-05-17 13:20:40"}
+{"level":"info","message":"Assigned permission payments:read to role collector","service":"auth-service","timestamp":"2025-05-17 13:20:40"}
+{"level":"info","message":"Assigned permission payments:update to role collector","service":"auth-service","timestamp":"2025-05-17 13:20:40"}
+{"level":"info","message":"Assigned permission payments:list to role collector","service":"auth-service","timestamp":"2025-05-17 13:20:40"}
+{"level":"info","message":"Assigned permission payments:process to role collector","service":"auth-service","timestamp":"2025-05-17 13:20:40"}
+{"level":"info","message":"Assigned permission sessions:read to role collector","service":"auth-service","timestamp":"2025-05-17 13:20:41"}
+{"level":"info","message":"Assigned permission security_logs:read to role collector","service":"auth-service","timestamp":"2025-05-17 13:20:41"}
+{"level":"info","message":"Assigned permission shipments:create to role customer","service":"auth-service","timestamp":"2025-05-17 13:20:41"}
+{"level":"info","message":"Assigned permission shipments:read to role customer","service":"auth-service","timestamp":"2025-05-17 13:20:41"}
+{"level":"info","message":"Assigned permission shipments:list to role customer","service":"auth-service","timestamp":"2025-05-17 13:20:41"}
+{"level":"info","message":"Assigned permission shipments:track to role customer","service":"auth-service","timestamp":"2025-05-17 13:20:41"}
+{"level":"info","message":"Assigned permission pickups:create to role customer","service":"auth-service","timestamp":"2025-05-17 13:20:41"}
+{"level":"info","message":"Assigned permission pickups:read to role customer","service":"auth-service","timestamp":"2025-05-17 13:20:41"}
+{"level":"info","message":"Assigned permission pickups:list to role customer","service":"auth-service","timestamp":"2025-05-17 13:20:41"}
+{"level":"info","message":"Assigned permission payments:read to role customer","service":"auth-service","timestamp":"2025-05-17 13:20:41"}
+{"level":"info","message":"Assigned permission payments:list to role customer","service":"auth-service","timestamp":"2025-05-17 13:20:42"}
+{"level":"info","message":"Assigned permission sessions:read to role customer","service":"auth-service","timestamp":"2025-05-17 13:20:42"}
+{"level":"info","message":"Assigning admin role to admin users...","service":"auth-service","timestamp":"2025-05-17 13:20:42"}
+{"level":"info","message":"Assigned admin role to user admin@samudrapaket.com","service":"auth-service","timestamp":"2025-05-17 13:20:42"}
+{"level":"info","message":"Role and permission seeder completed successfully","service":"auth-service","timestamp":"2025-05-17 13:20:42"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 13:21:10"}
+{"date":"Sat May 17 2025 13:51:56 GMT+0700 (Indochina Time)","error":{},"level":"error","message":"unhandledRejection: logger.error is not a function\nTypeError: logger.error is not a function\n    at getRoleById (D:\\sarana-erp\\apps\\auth-service\\src\\api\\controllers\\roleController.js:70:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","os":{"loadavg":[0,0,0],"uptime":239018.078},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\sarana-erp\\apps\\auth-service\\src\\server.js"],"cwd":"D:\\sarana-erp\\apps\\auth-service","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18439866,"external":21995353,"heapTotal":61140992,"heapUsed":58111120,"rss":109920256},"pid":39520,"uid":null,"version":"v22.15.0"},"rejection":true,"service":"auth-service","stack":"TypeError: logger.error is not a function\n    at getRoleById (D:\\sarana-erp\\apps\\auth-service\\src\\api\\controllers\\roleController.js:70:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-05-17 13:51:56","trace":[{"column":12,"file":"D:\\sarana-erp\\apps\\auth-service\\src\\api\\controllers\\roleController.js","function":"getRoleById","line":70,"method":null,"native":false},{"column":5,"file":"node:internal/process/task_queues","function":"process.processTicksAndRejections","line":105,"method":"processTicksAndRejections","native":false}]}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 13:53:04"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 13:53:08"}
+{"error":{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"hierarchy\" (type string) at path \"_id\" for model \"Role\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"hierarchy\"","value":"hierarchy","valueType":"string"},"level":"error","message":"Error getting role: Cast to ObjectId failed for value \"hierarchy\" (type string) at path \"_id\" for model \"Role\"","service":"auth-service","timestamp":"2025-05-17 13:53:20"}
+{"error":{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"hierarchy\" (type string) at path \"_id\" for model \"Role\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"hierarchy\"","value":"hierarchy","valueType":"string"},"level":"error","message":"Error getting role: Cast to ObjectId failed for value \"hierarchy\" (type string) at path \"_id\" for model \"Role\"","service":"auth-service","timestamp":"2025-05-17 13:53:28"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 13:54:03"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 13:54:12"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 13:54:20"}
+{"error":{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"hierarchy\" (type string) at path \"_id\" for model \"Role\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"hierarchy\"","value":"hierarchy","valueType":"string"},"level":"error","message":"Error getting role: Cast to ObjectId failed for value \"hierarchy\" (type string) at path \"_id\" for model \"Role\"","service":"auth-service","timestamp":"2025-05-17 13:54:20"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:10:56"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:10:58"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:11:02"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:11:09"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:11:15"}
+{"error":{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"hierarchy\" (type string) at path \"_id\" for model \"Role\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"hierarchy\"","value":"hierarchy","valueType":"string"},"level":"error","message":"Error getting role: Cast to ObjectId failed for value \"hierarchy\" (type string) at path \"_id\" for model \"Role\"","service":"auth-service","timestamp":"2025-05-17 14:12:02"}
+{"error":{},"level":"error","message":"Error getting all sessions: sessionRepository.findAll is not a function","service":"auth-service","timestamp":"2025-05-17 14:12:07"}
+{"date":"Sat May 17 2025 14:12:07 GMT+0700 (Indochina Time)","error":{},"level":"error","message":"unhandledRejection: errorResponse is not defined\nReferenceError: errorResponse is not defined\n    at getAllSessions (D:\\sarana-erp\\apps\\auth-service\\src\\api\\controllers\\sessionController.js:154:27)\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:110:5\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at authenticateJWT (D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:62:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","os":{"loadavg":[0,0,0],"uptime":240229.328},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\sarana-erp\\apps\\auth-service\\src\\server.js"],"cwd":"D:\\sarana-erp\\apps\\auth-service","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18391348,"external":21946835,"heapTotal":58519552,"heapUsed":54957784,"rss":104665088},"pid":39620,"uid":null,"version":"v22.15.0"},"rejection":true,"service":"auth-service","stack":"ReferenceError: errorResponse is not defined\n    at getAllSessions (D:\\sarana-erp\\apps\\auth-service\\src\\api\\controllers\\sessionController.js:154:27)\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:110:5\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at authenticateJWT (D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:62:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-05-17 14:12:07","trace":[{"column":27,"file":"D:\\sarana-erp\\apps\\auth-service\\src\\api\\controllers\\sessionController.js","function":"getAllSessions","line":154,"method":null,"native":false},{"column":5,"file":"D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js","function":"next","line":149,"method":null,"native":false},{"column":5,"file":"D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js","function":null,"line":110,"method":null,"native":false},{"column":5,"file":"D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js","function":"next","line":149,"method":null,"native":false},{"column":5,"file":"D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js","function":"authenticateJWT","line":62,"method":null,"native":false},{"column":5,"file":"node:internal/process/task_queues","function":"process.processTicksAndRejections","line":105,"method":"processTicksAndRejections","native":false}]}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:13:17"}
+{"error":{},"level":"error","message":"Error getting all sessions: sessionRepository.findAll is not a function","service":"auth-service","timestamp":"2025-05-17 14:13:33"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:13:49"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:14:07"}
+{"error":{},"level":"error","message":"Error getting all sessions: sessionRepository.count is not a function","service":"auth-service","timestamp":"2025-05-17 14:14:14"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:14:19"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:14:33"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:14:45"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:15:21"}
+{"error":{},"level":"error","message":"Error getting all sessions: sessionRepository.count is not a function","service":"auth-service","timestamp":"2025-05-17 14:15:45"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:16:49"}
+{"error":{},"level":"error","message":"Error getting all sessions: sessionRepository.count is not a function","service":"auth-service","timestamp":"2025-05-17 14:16:50"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:17:26"}
+{"error":{},"level":"error","message":"Error getting all sessions: sessionRepository.count is not a function","service":"auth-service","timestamp":"2025-05-17 14:17:29"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:17:38"}
+{"error":{},"level":"error","message":"Error getting all sessions: sessionRepository.count is not a function","service":"auth-service","timestamp":"2025-05-17 14:17:46"}
+{"error":{},"level":"error","message":"Error getting all sessions: sessionRepository.count is not a function","service":"auth-service","timestamp":"2025-05-17 14:18:20"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:21:31"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:21:49"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:22:22"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:22:45"}
+{"level":"error","message":"Error getting sessions: Session is not defined","service":"auth-service","stack":"ReferenceError: Session is not defined\n    at getAllSessions (D:\\sarana-erp\\apps\\auth-service\\src\\api\\controllers\\sessionController.js:155:9)\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:110:5\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at authenticateJWT (D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:62:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-05-17 14:23:40"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:24:07"}
+{"level":"error","message":"Error getting sessions: sessionRepository.find is not a function","service":"auth-service","stack":"TypeError: sessionRepository.find is not a function\n    at getAllSessions (D:\\sarana-erp\\apps\\auth-service\\src\\api\\controllers\\sessionController.js:155:27)\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:110:5\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at authenticateJWT (D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:62:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-05-17 14:24:09"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:24:35"}
+{"level":"error","message":"Error getting sessions: Cannot read properties of undefined (reading 'find')","service":"auth-service","stack":"TypeError: Cannot read properties of undefined (reading 'find')\n    at getAllSessions (D:\\sarana-erp\\apps\\auth-service\\src\\api\\controllers\\sessionController.js:155:18)\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:110:5\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at authenticateJWT (D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:62:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-05-17 14:24:37"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:25:28"}
+{"level":"error","message":"Error getting sessions: Cannot read properties of undefined (reading 'find')","service":"auth-service","stack":"TypeError: Cannot read properties of undefined (reading 'find')\n    at getAllSessions (D:\\sarana-erp\\apps\\auth-service\\src\\api\\controllers\\sessionController.js:155:18)\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:110:5\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at authenticateJWT (D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:62:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-05-17 14:25:30"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:25:38"}
+{"level":"error","message":"Error getting sessions: Cannot read properties of undefined (reading 'find')","service":"auth-service","stack":"TypeError: Cannot read properties of undefined (reading 'find')\n    at getAllSessions (D:\\sarana-erp\\apps\\auth-service\\src\\api\\controllers\\sessionController.js:155:18)\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:110:5\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at authenticateJWT (D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:62:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-05-17 14:25:44"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:26:07"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:26:42"}
+{"level":"error","message":"Error getting sessions: Cannot read properties of undefined (reading 'find')","service":"auth-service","stack":"TypeError: Cannot read properties of undefined (reading 'find')\n    at getAllSessions (D:\\sarana-erp\\apps\\auth-service\\src\\api\\controllers\\sessionController.js:155:18)\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:110:5\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at authenticateJWT (D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:62:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-05-17 14:26:42"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:26:49"}
+{"level":"error","message":"Error getting sessions: Session is not defined","service":"auth-service","stack":"ReferenceError: Session is not defined\n    at getAllSessions (D:\\sarana-erp\\apps\\auth-service\\src\\api\\controllers\\sessionController.js:155:9)\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:110:5\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at authenticateJWT (D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:62:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-05-17 14:26:49"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:26:56"}
+{"level":"error","message":"Error getting sessions: Cannot read properties of undefined (reading 'find')","service":"auth-service","stack":"TypeError: Cannot read properties of undefined (reading 'find')\n    at getAllSessions (D:\\sarana-erp\\apps\\auth-service\\src\\api\\controllers\\sessionController.js:155:18)\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:110:5\n    at Layer.handle [as handle_request] (D:\\sarana-erp\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\sarana-erp\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at authenticateJWT (D:\\sarana-erp\\apps\\auth-service\\src\\api\\middlewares\\authMiddleware.js:62:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-05-17 14:26:56"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:27:43"}

@@ -6,7 +6,7 @@
 const express = require('express');
 const { authController } = require('../controllers');
 const { validate } = require('../middlewares/validationMiddleware');
-const { authValidators } = require('../validators');
+const { authValidation } = require('../validators');
 const { 
   loginRateLimiter, 
   passwordResetRateLimiter, 
@@ -122,7 +122,7 @@ const router = express.Router();
 router.post(
   '/register',
   registrationRateLimiter,
-  validate(authValidators.registerSchema),
+  validate(authValidation.registerSchema),
   authController.register
 );
 
@@ -280,7 +280,7 @@ router.get(
 router.post(
   '/login',
   loginRateLimiter,
-  validate(authValidators.loginSchema),
+  validate(authValidation.loginSchema),
   authController.login
 );
 
@@ -347,7 +347,7 @@ router.post(
  */
 router.post(
   '/refresh-token',
-  validate(authValidators.refreshTokenSchema),
+  validate(authValidation.refreshTokenSchema),
   authController.refreshToken
 );
 
@@ -389,7 +389,7 @@ router.post(
  */
 router.post(
   '/logout',
-  validate(authValidators.logoutSchema),
+  validate(authValidation.logoutSchema),
   authController.logout
 );
 
@@ -449,7 +449,7 @@ router.post(
 router.post(
   '/request-password-reset',
   passwordResetRateLimiter,
-  validate(authValidators.passwordResetRequestSchema),
+  validate(authValidation.passwordResetRequestSchema),
   authController.requestPasswordReset
 );
 
@@ -510,7 +510,7 @@ router.post(
  */
 router.post(
   '/reset-password',
-  validate(authValidators.passwordResetSchema),
+  validate(authValidation.passwordResetSchema),
   authController.resetPassword
 );
 
@@ -579,7 +579,7 @@ router.post(
 router.post(
   '/change-password',
   authenticateJWT,
-  validate(authValidators.passwordChangeSchema),
+  validate(authValidation.passwordChangeSchema),
   authController.changePassword
 );
 

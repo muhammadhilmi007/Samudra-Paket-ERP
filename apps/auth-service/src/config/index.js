@@ -36,9 +36,17 @@ const config = {
     port: parseInt(process.env.REDIS_PORT || '59026', 10),
     password: process.env.REDIS_PASSWORD || 'KpJvwiHgufgzaiZEYCyNAgSRjiJJXgQE',
     url: process.env.REDIS_URL || 'redis://default:KpJvwiHgufgzaiZEYCyNAgSRjiJJXgQE@yamabiko.proxy.rlwy.net:59026',
-    keyPrefix: 'auth:'
+    keyPrefix: 'auth:',
+    ttl: parseInt(process.env.REDIS_TTL || '86400', 10) // 24 hours in seconds
   },
   
+  // Logging configuration
+  logging: {
+    level: process.env.LOG_LEVEL || 'info',
+    format: process.env.LOG_FORMAT || 'json',
+    directory: process.env.LOG_DIR || 'logs'
+  },
+
   // JWT configuration
   jwt: {
     secret: process.env.JWT_SECRET || 'your-secret-key-change-in-production',
@@ -95,4 +103,10 @@ const config = {
   }
 };
 
-module.exports = config;
+// Import Redis client
+const { getRedisClient } = require('./redis');
+
+module.exports = {
+  ...config,
+  getRedisClient
+};

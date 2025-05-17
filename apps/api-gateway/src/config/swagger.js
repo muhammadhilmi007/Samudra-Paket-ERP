@@ -44,6 +44,153 @@ const configureSwagger = (app, port) => {
           }
         },
         schemas: {
+          Role: {
+            type: 'object',
+            properties: {
+              _id: {
+                type: 'string',
+                example: '60d21b4667d0d8992e610c85'
+              },
+              name: {
+                type: 'string',
+                example: 'manager'
+              },
+              description: {
+                type: 'string',
+                example: 'Manager with access to operations and reporting'
+              },
+              parent: {
+                type: 'string',
+                example: '60d21b4667d0d8992e610c86',
+                nullable: true
+              },
+              level: {
+                type: 'integer',
+                example: 1
+              },
+              isSystem: {
+                type: 'boolean',
+                example: true
+              },
+              createdAt: {
+                type: 'string',
+                format: 'date-time'
+              },
+              updatedAt: {
+                type: 'string',
+                format: 'date-time'
+              }
+            }
+          },
+          Permission: {
+            type: 'object',
+            properties: {
+              _id: {
+                type: 'string',
+                example: '60d21b4667d0d8992e610c87'
+              },
+              resource: {
+                type: 'string',
+                example: 'users'
+              },
+              action: {
+                type: 'string',
+                example: 'read'
+              },
+              attributes: {
+                type: 'object',
+                example: { ownResource: true }
+              },
+              description: {
+                type: 'string',
+                example: 'Permission to read users'
+              },
+              isSystem: {
+                type: 'boolean',
+                example: true
+              },
+              createdAt: {
+                type: 'string',
+                format: 'date-time'
+              },
+              updatedAt: {
+                type: 'string',
+                format: 'date-time'
+              }
+            }
+          },
+          RolePermission: {
+            type: 'object',
+            properties: {
+              _id: {
+                type: 'string',
+                example: '60d21b4667d0d8992e610c88'
+              },
+              role: {
+                type: 'string',
+                example: '60d21b4667d0d8992e610c85'
+              },
+              permission: {
+                type: 'string',
+                example: '60d21b4667d0d8992e610c87'
+              },
+              constraints: {
+                type: 'object',
+                example: { ownResource: true }
+              },
+              granted: {
+                type: 'boolean',
+                example: true
+              },
+              createdAt: {
+                type: 'string',
+                format: 'date-time'
+              },
+              updatedAt: {
+                type: 'string',
+                format: 'date-time'
+              }
+            }
+          },
+          UserRole: {
+            type: 'object',
+            properties: {
+              _id: {
+                type: 'string',
+                example: '60d21b4667d0d8992e610c89'
+              },
+              user: {
+                type: 'string',
+                example: '60d21b4667d0d8992e610c90'
+              },
+              role: {
+                type: 'string',
+                example: '60d21b4667d0d8992e610c85'
+              },
+              scope: {
+                type: 'object',
+                example: { department: 'IT' },
+                nullable: true
+              },
+              expiresAt: {
+                type: 'string',
+                format: 'date-time',
+                nullable: true
+              },
+              isActive: {
+                type: 'boolean',
+                example: true
+              },
+              createdAt: {
+                type: 'string',
+                format: 'date-time'
+              },
+              updatedAt: {
+                type: 'string',
+                format: 'date-time'
+              }
+            }
+          },
           User: {
             type: 'object',
             properties: {

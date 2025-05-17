@@ -5,6 +5,7 @@
 
 const mongoose = require('mongoose');
 const { seedAdminUser } = require('./userSeeder');
+const { seedRolesAndPermissions } = require('./rolePermissionSeeder');
 const winston = require('winston');
 
 // Create logger instance
@@ -34,7 +35,7 @@ const runSeeders = async () => {
   try {
     // Connect to MongoDB
     mongoose.set('strictQuery', false);
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/auth-service', {
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://mongo:HpmyPloqcCXAQdHoTRXmOGbnOYRqyufP@nozomi.proxy.rlwy.net:22764', {
       useNewUrlParser: true,
       useUnifiedTopology: true
     });
@@ -43,6 +44,7 @@ const runSeeders = async () => {
     
     // Run seeders
     await seedAdminUser();
+    await seedRolesAndPermissions();
     
     logger.info('All seeders completed successfully');
     
