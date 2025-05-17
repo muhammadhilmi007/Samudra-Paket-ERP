@@ -1,0 +1,73 @@
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-16T15:40:13.823Z"}
+{"level":"info","message":"Admin user created successfully","service":"auth-service-seeder","timestamp":"2025-05-16T15:40:14.608Z"}
+{"level":"info","message":"Manager user created successfully","service":"auth-service-seeder","timestamp":"2025-05-16T15:40:14.764Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-16T15:40:14.765Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-16T15:40:14.772Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-16T15:43:32.396Z"}
+{"level":"info","message":"Admin user already exists, skipping seeder","service":"auth-service-seeder","timestamp":"2025-05-16T15:43:32.698Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-16T15:43:32.699Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-16T15:43:32.790Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-16T15:45:21.001Z"}
+{"level":"info","message":"Admin user created successfully","service":"auth-service-seeder","timestamp":"2025-05-16T15:45:21.193Z"}
+{"level":"info","message":"Manager user created successfully","service":"auth-service-seeder","timestamp":"2025-05-16T15:45:21.313Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-16T15:45:21.314Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-16T15:45:32.863Z"}
+{"level":"info","message":"Admin user already exists, skipping seeder","service":"auth-service-seeder","timestamp":"2025-05-16T15:45:33.200Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-16T15:45:33.201Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-16T15:45:33.298Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-16T15:47:28.605Z"}
+{"level":"info","message":"Admin user already exists, skipping seeder","service":"auth-service-seeder","timestamp":"2025-05-16T15:47:28.858Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-16T15:47:28.859Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-16T15:47:29.028Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-16T15:51:39.198Z"}
+{"level":"info","message":"Admin user already exists, skipping seeder","service":"auth-service-seeder","timestamp":"2025-05-16T15:51:39.421Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-16T15:51:39.422Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-16T15:51:39.515Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-17T01:56:44.237Z"}
+{"level":"info","message":"Admin user already exists, skipping seeder","service":"auth-service-seeder","timestamp":"2025-05-17T01:56:44.327Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-17T01:56:44.327Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-17T01:56:44.345Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-17T01:58:52.284Z"}
+{"level":"info","message":"Admin user already exists, skipping seeder","service":"auth-service-seeder","timestamp":"2025-05-17T01:58:52.351Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-17T01:58:52.352Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-17T01:58:52.379Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:11.384Z"}
+{"level":"info","message":"Admin user already exists, skipping seeder","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:11.466Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:11.467Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:11.498Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:14.264Z"}
+{"level":"info","message":"Admin user already exists, skipping seeder","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:14.338Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:14.339Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:14.366Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:32.549Z"}
+{"level":"info","message":"Admin user already exists, skipping seeder","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:33.041Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:33.042Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:33.155Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:41.165Z"}
+{"level":"info","message":"Admin user already exists, skipping seeder","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:41.254Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:41.255Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:41.341Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:43.237Z"}
+{"level":"info","message":"Admin user already exists, skipping seeder","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:43.314Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:43.314Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-17T02:59:43.342Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-17T03:00:05.519Z"}
+{"level":"info","message":"Admin user already exists, skipping seeder","service":"auth-service-seeder","timestamp":"2025-05-17T03:00:05.589Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-17T03:00:05.590Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-17T03:00:05.625Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-17T03:01:45.997Z"}
+{"level":"info","message":"Admin user already exists, skipping seeder","service":"auth-service-seeder","timestamp":"2025-05-17T03:01:46.116Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-17T03:01:46.117Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-17T03:01:46.227Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-17T03:04:05.919Z"}
+{"level":"info","message":"Admin user already exists, skipping seeder","service":"auth-service-seeder","timestamp":"2025-05-17T03:04:05.991Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-17T03:04:05.992Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-17T03:04:06.021Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-17T03:13:20.642Z"}
+{"level":"info","message":"Admin user already exists, skipping seeder","service":"auth-service-seeder","timestamp":"2025-05-17T03:13:20.782Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-17T03:13:20.782Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-17T03:13:20.811Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-seeder","timestamp":"2025-05-17T03:19:00.188Z"}
+{"level":"info","message":"Admin user already exists, skipping seeder","service":"auth-service-seeder","timestamp":"2025-05-17T03:19:00.373Z"}
+{"level":"info","message":"All seeders completed successfully","service":"auth-service-seeder","timestamp":"2025-05-17T03:19:00.373Z"}
+{"level":"info","message":"MongoDB connection closed","service":"auth-service-seeder","timestamp":"2025-05-17T03:19:00.431Z"}

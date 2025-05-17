@@ -9,6 +9,7 @@ const {
   cacheMiddleware, 
   createCircuitBreakerProxy 
 } = require('../middlewares');
+const authRoutes = require('./authRoutes');
 
 /**
  * Configure API routes for the gateway

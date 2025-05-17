@@ -1,0 +1,43 @@
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-16T15:40:13.808Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-16T15:40:14.772Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-16T15:43:32.386Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-16T15:43:32.789Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-16T15:45:32.852Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-16T15:45:33.298Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-16T15:47:28.583Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-16T15:47:29.027Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-16T15:51:39.183Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-16T15:51:39.514Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T01:56:44.230Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-17T01:56:44.344Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T01:58:52.276Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-17T01:58:52.378Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T02:41:18.316Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T02:44:50.057Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T02:45:31.773Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T02:59:11.375Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-17T02:59:11.497Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T02:59:14.258Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-17T02:59:14.366Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T02:59:32.543Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-17T02:59:33.155Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T02:59:41.158Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-17T02:59:41.340Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T02:59:43.229Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-17T02:59:43.341Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T03:00:05.508Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-17T03:00:05.624Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T03:01:45.991Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-17T03:01:46.227Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T03:04:05.911Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-17T03:04:06.020Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T03:09:35.202Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T03:11:02.788Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T03:11:20.625Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T03:12:28.269Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T03:13:20.636Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-17T03:13:20.810Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T03:19:00.182Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-17T03:19:00.430Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T03:19:50.577Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T03:32:29.727Z"}
