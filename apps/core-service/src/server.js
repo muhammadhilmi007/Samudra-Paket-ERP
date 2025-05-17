@@ -3,52 +3,62 @@
  * Entry point for the Core Service
  */
 
+require('dotenv').config();
 const express = require('express');
-const mongoose = require('mongoose');
 const cors = require('cors');
 const helmet = require('helmet');
-const dotenv = require('dotenv');
+const morgan = require('morgan');
+const compression = require('compression');
+const { logger } = require('./utils');
+const connectDB = require('./config/database');
+const setupSwagger = require('./api/swagger');
+const routes = require('./api/routes');
 
-// Load environment variables
-dotenv.config();
-
-// Create Express app
+// Initialize Express app
 const app = express();
-const PORT = process.env.PORT || 3002;
 
-// Apply middleware
-app.use(helmet()); // Security headers
-app.use(cors()); // CORS
-app.use(express.json()); // Parse JSON bodies
+// Connect to MongoDB
+connectDB();
 
-// Database connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/core-service', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-  .then(() => console.log('Connected to MongoDB'))
-  .catch((err) => console.error('MongoDB connection error:', err));
+// Middleware
+app.use(cors());
+app.use(helmet());
+app.use(compression());
+app.use(express.json({ limit: '10mb' }));
+app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+app.use(morgan('combined', { stream: logger.stream }));
 
-// API routes
-app.use('/api', require('./api/routes'));
+// Setup Swagger documentation
+setupSwagger(app);
+
+// API Routes
+app.use('/api', routes);
 
 // Health check endpoint
 app.get('/health', (req, res) => {
-  res.status(200).json({ status: 'ok', service: 'core-service' });
+  res.status(200).json({
+    success: true,
+    message: 'Core service is running',
+    timestamp: new Date().toISOString(),
+    service: 'core-service'
+  });
 });
 
 // Error handling middleware
 app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).json({
-    status: 'error',
-    message: 'Internal Server Error',
+  logger.error(`Unhandled error: ${err.message}`, { error: err });
+  
+  res.status(err.status || 500).json({
+    success: false,
+    message: err.message || 'Internal server error',
+    error: process.env.NODE_ENV === 'development' ? err.stack : undefined
   });
 });
 
 // Start server
+const PORT = process.env.PORT || 3002;
 app.listen(PORT, () => {
-  console.log(`Core Service running on port ${PORT}`);
+  logger.info(`Core service running on port ${PORT}`);
 });
 
 module.exports = app;

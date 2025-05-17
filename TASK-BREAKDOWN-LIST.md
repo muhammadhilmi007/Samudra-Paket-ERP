@@ -205,24 +205,25 @@ Checklist ini disusun berdasarkan fase implementasi (Backend → Frontend → Mo
 - [x] Implementasi API documentation dengan Postman
 - [x] Implementasi seeder untuk role admin
 
-### C. Backend: Modul Manajemen Cabang & Divisi
+### C. Backend: Modul Manajemen Cabang & Divisi (Core-Service)
 
 #### Branch Management Service
 
-- [ ] Desain dan implementasi database schema untuk branches dengan struktur hierarki (pusat, regional, cabang)
-- [ ] Implementasi CRUD endpoints untuk branches dengan validasi
-- [ ] Implementasi branch hierarchy management (parent-child relationship)
-- [ ] Implementasi branch search dan filtering dengan pagination
-- [ ] Implementasi branch status management (active/inactive) dengan history tracking
-- [ ] Implementasi branch performance metrics calculation
-- [ ] Implementasi branch resource allocation management
-- [ ] Implementasi branch contact information management
-- [ ] Implementasi branch operational hours management
-- [ ] Implementasi branch document management
-- [ ] Unit testing untuk branch management
-- [ ] Integration testing untuk branch API endpoints
-- [ ] Implementasi API documentation dengan Swagger
-- [ ] Implementasi seeder untuk branch
+- [x] Desain dan implementasi database schema untuk branches dengan struktur hierarki (pusat, regional, cabang)
+- [x] Implementasi CRUD endpoints untuk branches dengan validasi
+- [x] Implementasi branch hierarchy management (parent-child relationship)
+- [x] Implementasi branch search dan filtering dengan pagination
+- [x] Implementasi branch status management (active/inactive) dengan history tracking
+- [x] Implementasi branch performance metrics calculation
+- [x] Implementasi branch resource allocation management
+- [x] Implementasi branch contact information management
+- [x] Implementasi branch operational hours management
+- [x] Implementasi branch document management
+- [x] Unit testing untuk branch management
+- [x] Integration testing untuk branch API endpoints
+- [x] Implementasi API documentation dengan Swagger
+- [x] Implementasi API documentation dengan Postman
+- [x] Implementasi seeder untuk branch
 
 #### Service Area Management
 

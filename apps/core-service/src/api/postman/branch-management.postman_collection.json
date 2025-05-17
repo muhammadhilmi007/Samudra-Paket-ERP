@@ -1,0 +1,542 @@
+{
+  "info": {
+    "name": "Samudra Paket ERP - Branch Management",
+    "description": "API collection for Branch Management in Samudra Paket ERP",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "12345678"
+  },
+  "item": [
+    {
+      "name": "Authentication",
+      "description": "Endpoints for authentication",
+      "item": [
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"admin@samudrapaket.com\",\n    \"password\": \"Password123!\"\n}"
+            },
+            "url": {
+              "raw": "{{auth_service_url}}/api/auth/login",
+              "host": [
+                "{{auth_service_url}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            },
+            "description": "Login to get authentication token"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Branch Management",
+      "description": "Endpoints for managing branches",
+      "item": [
+        {
+          "name": "Create Branch",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"code\": \"JKT-001\",\n    \"name\": \"Jakarta Pusat\",\n    \"type\": \"HUB\",\n    \"parentId\": null,\n    \"status\": \"ACTIVE\",\n    \"address\": {\n        \"street\": \"Jl. Kebon Sirih No. 10\",\n        \"city\": \"Jakarta Pusat\",\n        \"province\": \"DKI Jakarta\",\n        \"postalCode\": \"10110\",\n        \"country\": \"Indonesia\",\n        \"coordinates\": {\n            \"latitude\": -6.186486,\n            \"longitude\": 106.834091\n        }\n    },\n    \"contact\": {\n        \"phoneNumber\": \"+62215678901\",\n        \"email\": \"jakarta.pusat@samudrapaket.com\",\n        \"fax\": \"+62215678902\",\n        \"contactPerson\": \"Budi Santoso\"\n    },\n    \"operationalHours\": {\n        \"monday\": { \"open\": \"08:00\", \"close\": \"17:00\" },\n        \"tuesday\": { \"open\": \"08:00\", \"close\": \"17:00\" },\n        \"wednesday\": { \"open\": \"08:00\", \"close\": \"17:00\" },\n        \"thursday\": { \"open\": \"08:00\", \"close\": \"17:00\" },\n        \"friday\": { \"open\": \"08:00\", \"close\": \"17:00\" },\n        \"saturday\": { \"open\": \"09:00\", \"close\": \"15:00\" },\n        \"sunday\": { \"open\": null, \"close\": null }\n    },\n    \"resources\": {\n        \"vehicles\": 5,\n        \"staff\": 15,\n        \"storageCapacity\": 1000\n    }\n}"
+            },
+            "url": {
+              "raw": "{{core_service_url}}/api/branches",
+              "host": [
+                "{{core_service_url}}"
+              ],
+              "path": [
+                "api",
+                "branches"
+              ]
+            },
+            "description": "Create a new branch"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Branch by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{core_service_url}}/api/branches/:id",
+              "host": [
+                "{{core_service_url}}"
+              ],
+              "path": [
+                "api",
+                "branches",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{branch_id}}"
+                }
+              ]
+            },
+            "description": "Get a branch by its ID"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Branch",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Jakarta Pusat Updated\",\n    \"contact\": {\n        \"phoneNumber\": \"+62215678903\",\n        \"email\": \"jakarta.pusat.updated@samudrapaket.com\",\n        \"contactPerson\": \"Budi Santoso Jr.\"\n    },\n    \"address\": {\n        \"street\": \"Jl. Kebon Sirih No. 12\",\n        \"city\": \"Jakarta Pusat\",\n        \"province\": \"DKI Jakarta\",\n        \"postalCode\": \"10110\",\n        \"country\": \"Indonesia\",\n        \"coordinates\": {\n            \"latitude\": -6.186486,\n            \"longitude\": 106.834091\n        }\n    }\n}"
+            },
+            "url": {
+              "raw": "{{core_service_url}}/api/branches/:id",
+              "host": [
+                "{{core_service_url}}"
+              ],
+              "path": [
+                "api",
+                "branches",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{branch_id}}"
+                }
+              ]
+            },
+            "description": "Update an existing branch"
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Branch",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{core_service_url}}/api/branches/:id",
+              "host": [
+                "{{core_service_url}}"
+              ],
+              "path": [
+                "api",
+                "branches",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{branch_id}}"
+                }
+              ]
+            },
+            "description": "Delete a branch by its ID"
+          },
+          "response": []
+        },
+        {
+          "name": "List Branches",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{core_service_url}}/api/branches?page=1&limit=10&type=HUB&status=ACTIVE",
+              "host": [
+                "{{core_service_url}}"
+              ],
+              "path": [
+                "api",
+                "branches"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                },
+                {
+                  "key": "type",
+                  "value": "HUB"
+                },
+                {
+                  "key": "status",
+                  "value": "ACTIVE"
+                }
+              ]
+            },
+            "description": "List branches with pagination and filtering"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Branch Hierarchy",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{core_service_url}}/api/branches/hierarchy/:id",
+              "host": [
+                "{{core_service_url}}"
+              ],
+              "path": [
+                "api",
+                "branches",
+                "hierarchy",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{branch_id}}"
+                }
+              ]
+            },
+            "description": "Get branch hierarchy for a specific branch"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Branch Status",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"status\": \"INACTIVE\",\n    \"statusReason\": \"Temporary closure for renovation\"\n}"
+            },
+            "url": {
+              "raw": "{{core_service_url}}/api/branches/:id/status",
+              "host": [
+                "{{core_service_url}}"
+              ],
+              "path": [
+                "api",
+                "branches",
+                ":id",
+                "status"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{branch_id}}"
+                }
+              ]
+            },
+            "description": "Update a branch's status"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Branch Metrics",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"metrics\": {\n        \"dailyShipments\": 120,\n        \"monthlyRevenue\": 75000000,\n        \"customerSatisfaction\": 4.8,\n        \"onTimeDeliveryRate\": 0.95\n    }\n}"
+            },
+            "url": {
+              "raw": "{{core_service_url}}/api/branches/:id/metrics",
+              "host": [
+                "{{core_service_url}}"
+              ],
+              "path": [
+                "api",
+                "branches",
+                ":id",
+                "metrics"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{branch_id}}"
+                }
+              ]
+            },
+            "description": "Update a branch's performance metrics"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Branch Resources",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"resources\": {\n        \"vehicles\": 7,\n        \"staff\": 18,\n        \"storageCapacity\": 1200\n    }\n}"
+            },
+            "url": {
+              "raw": "{{core_service_url}}/api/branches/:id/resources",
+              "host": [
+                "{{core_service_url}}"
+              ],
+              "path": [
+                "api",
+                "branches",
+                ":id",
+                "resources"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{branch_id}}"
+                }
+              ]
+            },
+            "description": "Update a branch's resource allocation"
+          },
+          "response": []
+        },
+        {
+          "name": "Add Branch Document",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"document\": {\n        \"type\": \"LICENSE\",\n        \"name\": \"Business License\",\n        \"fileUrl\": \"https://storage.samudrapaket.com/documents/license-jkt001.pdf\",\n        \"expiryDate\": \"2025-12-31\"\n    }\n}"
+            },
+            "url": {
+              "raw": "{{core_service_url}}/api/branches/:id/documents",
+              "host": [
+                "{{core_service_url}}"
+              ],
+              "path": [
+                "api",
+                "branches",
+                ":id",
+                "documents"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{branch_id}}"
+                }
+              ]
+            },
+            "description": "Add a document to a branch"
+          },
+          "response": []
+        },
+        {
+          "name": "Remove Branch Document",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{core_service_url}}/api/branches/:id/documents/:documentId",
+              "host": [
+                "{{core_service_url}}"
+              ],
+              "path": [
+                "api",
+                "branches",
+                ":id",
+                "documents",
+                ":documentId"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{branch_id}}"
+                },
+                {
+                  "key": "documentId",
+                  "value": "{{document_id}}"
+                }
+              ]
+            },
+            "description": "Remove a document from a branch"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Branch Operational Hours",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"operationalHours\": {\n        \"monday\": { \"open\": \"07:30\", \"close\": \"18:00\" },\n        \"tuesday\": { \"open\": \"07:30\", \"close\": \"18:00\" },\n        \"wednesday\": { \"open\": \"07:30\", \"close\": \"18:00\" },\n        \"thursday\": { \"open\": \"07:30\", \"close\": \"18:00\" },\n        \"friday\": { \"open\": \"07:30\", \"close\": \"18:00\" },\n        \"saturday\": { \"open\": \"08:00\", \"close\": \"16:00\" },\n        \"sunday\": { \"open\": \"10:00\", \"close\": \"14:00\" }\n    }\n}"
+            },
+            "url": {
+              "raw": "{{core_service_url}}/api/branches/:id/operational-hours",
+              "host": [
+                "{{core_service_url}}"
+              ],
+              "path": [
+                "api",
+                "branches",
+                ":id",
+                "operational-hours"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{branch_id}}"
+                }
+              ]
+            },
+            "description": "Update a branch's operational hours"
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "core_service_url",
+      "value": "http://localhost:3001",
+      "type": "string"
+    },
+    {
+      "key": "auth_service_url",
+      "value": "http://localhost:3000",
+      "type": "string"
+    },
+    {
+      "key": "auth_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "branch_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "document_id",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}

@@ -84,3 +84,7 @@
 {"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T07:26:49.053Z"}
 {"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T07:26:56.293Z"}
 {"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T07:27:43.367Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T08:47:00.336Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"auth-service-db","timestamp":"2025-05-17T10:33:25.436Z"}
+{"level":"info","message":"MongoDB reconnected","service":"auth-service-db","timestamp":"2025-05-17T10:33:35.671Z"}
+{"level":"info","message":"Connected to MongoDB","service":"auth-service-db","timestamp":"2025-05-17T10:38:29.713Z"}
