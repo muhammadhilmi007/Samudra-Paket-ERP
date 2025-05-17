@@ -1,12 +1,13 @@
 /**
- * Branch Seeder
- * Seeds initial branch data
+ * Data Seeder
+ * Seeds initial data for the core service
  */
 
 require('dotenv').config();
 const mongoose = require('mongoose');
 const { Branch } = require('../domain/models');
 const { logger } = require('../utils');
+const seedServiceAreas = require('./seeders/serviceAreaSeeder');
 
 /**
  * Initial branch data
@@ -150,7 +151,7 @@ const branchData = [
 ];
 
 /**
- * Import branch data
+ * Import all seed data
  */
 const importData = async () => {
   try {
@@ -182,6 +183,10 @@ const importData = async () => {
     logger.info(`${regionalBranches.length} regional branches created`);
     
     logger.info('Branch data import completed');
+    
+    // Seed service areas
+    await seedServiceAreas();
+    logger.info('All seed data import completed');
     process.exit();
   } catch (error) {
     logger.error(`Error importing branch data: ${error.message}`, { error });
@@ -190,7 +195,7 @@ const importData = async () => {
 };
 
 /**
- * Delete all branch data
+ * Delete all seed data
  */
 const destroyData = async () => {
   try {
@@ -202,13 +207,21 @@ const destroyData = async () => {
     
     logger.info('MongoDB Connected');
     
-    // Clear all branch data
+    // Clear all data
     await Branch.deleteMany();
     logger.info('All branch data deleted');
     
+    // Clear service area data
+    const { ServiceArea, ServiceAreaPricing, BranchServiceArea, ServiceAreaHistory } = require('../domain/models');
+    await ServiceArea.deleteMany();
+    await ServiceAreaPricing.deleteMany();
+    await BranchServiceArea.deleteMany();
+    await ServiceAreaHistory.deleteMany();
+    logger.info('All service area data deleted');
+    
     process.exit();
   } catch (error) {
-    logger.error(`Error deleting branch data: ${error.message}`, { error });
+    logger.error(`Error deleting seed data: ${error.message}`, { error });
     process.exit(1);
   }
 };

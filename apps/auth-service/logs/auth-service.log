@@ -383,3 +383,230 @@
 {"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 14:27:43"}
 {"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 15:47:00"}
 {"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 17:38:29"}
+{"level":"info","message":"Starting role and permission seeder...","service":"auth-service","timestamp":"2025-05-17 20:09:23"}
+{"level":"info","message":"Creating default permissions...","service":"auth-service","timestamp":"2025-05-17 20:09:23"}
+{"level":"info","message":"Created permission: users:create","service":"auth-service","timestamp":"2025-05-17 20:09:23"}
+{"level":"info","message":"Created permission: users:read","service":"auth-service","timestamp":"2025-05-17 20:09:23"}
+{"level":"info","message":"Created permission: users:update","service":"auth-service","timestamp":"2025-05-17 20:09:23"}
+{"level":"info","message":"Created permission: users:delete","service":"auth-service","timestamp":"2025-05-17 20:09:24"}
+{"level":"info","message":"Created permission: users:list","service":"auth-service","timestamp":"2025-05-17 20:09:24"}
+{"level":"info","message":"Created permission: roles:create","service":"auth-service","timestamp":"2025-05-17 20:09:24"}
+{"level":"info","message":"Created permission: roles:read","service":"auth-service","timestamp":"2025-05-17 20:09:24"}
+{"level":"info","message":"Created permission: roles:update","service":"auth-service","timestamp":"2025-05-17 20:09:24"}
+{"level":"info","message":"Created permission: roles:delete","service":"auth-service","timestamp":"2025-05-17 20:09:24"}
+{"level":"info","message":"Created permission: roles:list","service":"auth-service","timestamp":"2025-05-17 20:09:24"}
+{"level":"info","message":"Created permission: permissions:create","service":"auth-service","timestamp":"2025-05-17 20:09:24"}
+{"level":"info","message":"Created permission: permissions:read","service":"auth-service","timestamp":"2025-05-17 20:09:24"}
+{"level":"info","message":"Created permission: permissions:update","service":"auth-service","timestamp":"2025-05-17 20:09:25"}
+{"level":"info","message":"Created permission: permissions:delete","service":"auth-service","timestamp":"2025-05-17 20:09:25"}
+{"level":"info","message":"Created permission: permissions:list","service":"auth-service","timestamp":"2025-05-17 20:09:25"}
+{"level":"info","message":"Created permission: user_roles:create","service":"auth-service","timestamp":"2025-05-17 20:09:25"}
+{"level":"info","message":"Created permission: user_roles:read","service":"auth-service","timestamp":"2025-05-17 20:09:25"}
+{"level":"info","message":"Created permission: user_roles:update","service":"auth-service","timestamp":"2025-05-17 20:09:25"}
+{"level":"info","message":"Created permission: user_roles:delete","service":"auth-service","timestamp":"2025-05-17 20:09:26"}
+{"level":"info","message":"Created permission: user_roles:list","service":"auth-service","timestamp":"2025-05-17 20:09:26"}
+{"level":"info","message":"Created permission: sessions:read","service":"auth-service","timestamp":"2025-05-17 20:09:26"}
+{"level":"info","message":"Created permission: sessions:revoke","service":"auth-service","timestamp":"2025-05-17 20:09:26"}
+{"level":"info","message":"Created permission: sessions:list","service":"auth-service","timestamp":"2025-05-17 20:09:26"}
+{"level":"info","message":"Created permission: security_logs:read","service":"auth-service","timestamp":"2025-05-17 20:09:26"}
+{"level":"info","message":"Created permission: security_logs:list","service":"auth-service","timestamp":"2025-05-17 20:09:27"}
+{"level":"info","message":"Created permission: shipments:create","service":"auth-service","timestamp":"2025-05-17 20:09:27"}
+{"level":"info","message":"Created permission: shipments:read","service":"auth-service","timestamp":"2025-05-17 20:09:27"}
+{"level":"info","message":"Created permission: shipments:update","service":"auth-service","timestamp":"2025-05-17 20:09:27"}
+{"level":"info","message":"Created permission: shipments:delete","service":"auth-service","timestamp":"2025-05-17 20:09:27"}
+{"level":"info","message":"Created permission: shipments:list","service":"auth-service","timestamp":"2025-05-17 20:09:27"}
+{"level":"info","message":"Created permission: shipments:track","service":"auth-service","timestamp":"2025-05-17 20:09:27"}
+{"level":"info","message":"Created permission: pickups:create","service":"auth-service","timestamp":"2025-05-17 20:09:27"}
+{"level":"info","message":"Created permission: pickups:read","service":"auth-service","timestamp":"2025-05-17 20:09:27"}
+{"level":"info","message":"Created permission: pickups:update","service":"auth-service","timestamp":"2025-05-17 20:09:28"}
+{"level":"info","message":"Created permission: pickups:delete","service":"auth-service","timestamp":"2025-05-17 20:09:28"}
+{"level":"info","message":"Created permission: pickups:list","service":"auth-service","timestamp":"2025-05-17 20:09:28"}
+{"level":"info","message":"Created permission: pickups:assign","service":"auth-service","timestamp":"2025-05-17 20:09:28"}
+{"level":"info","message":"Created permission: pickups:complete","service":"auth-service","timestamp":"2025-05-17 20:09:28"}
+{"level":"info","message":"Created permission: deliveries:create","service":"auth-service","timestamp":"2025-05-17 20:09:28"}
+{"level":"info","message":"Created permission: deliveries:read","service":"auth-service","timestamp":"2025-05-17 20:09:28"}
+{"level":"info","message":"Created permission: deliveries:update","service":"auth-service","timestamp":"2025-05-17 20:09:28"}
+{"level":"info","message":"Created permission: deliveries:delete","service":"auth-service","timestamp":"2025-05-17 20:09:29"}
+{"level":"info","message":"Created permission: deliveries:list","service":"auth-service","timestamp":"2025-05-17 20:09:29"}
+{"level":"info","message":"Created permission: deliveries:assign","service":"auth-service","timestamp":"2025-05-17 20:09:29"}
+{"level":"info","message":"Created permission: deliveries:complete","service":"auth-service","timestamp":"2025-05-17 20:09:29"}
+{"level":"info","message":"Created permission: payments:create","service":"auth-service","timestamp":"2025-05-17 20:09:29"}
+{"level":"info","message":"Created permission: payments:read","service":"auth-service","timestamp":"2025-05-17 20:09:29"}
+{"level":"info","message":"Created permission: payments:update","service":"auth-service","timestamp":"2025-05-17 20:09:29"}
+{"level":"info","message":"Created permission: payments:delete","service":"auth-service","timestamp":"2025-05-17 20:09:29"}
+{"level":"info","message":"Created permission: payments:list","service":"auth-service","timestamp":"2025-05-17 20:09:29"}
+{"level":"info","message":"Created permission: payments:process","service":"auth-service","timestamp":"2025-05-17 20:09:29"}
+{"level":"info","message":"Created permission: reports:generate","service":"auth-service","timestamp":"2025-05-17 20:09:30"}
+{"level":"info","message":"Created permission: reports:read","service":"auth-service","timestamp":"2025-05-17 20:09:30"}
+{"level":"info","message":"Created permission: reports:export","service":"auth-service","timestamp":"2025-05-17 20:09:30"}
+{"level":"info","message":"Created permission: reports:list","service":"auth-service","timestamp":"2025-05-17 20:09:30"}
+{"level":"info","message":"Creating default roles...","service":"auth-service","timestamp":"2025-05-17 20:09:30"}
+{"level":"info","message":"Created role: admin","service":"auth-service","timestamp":"2025-05-17 20:09:30"}
+{"level":"info","message":"Created role: manager","service":"auth-service","timestamp":"2025-05-17 20:09:30"}
+{"level":"info","message":"Created role: courier","service":"auth-service","timestamp":"2025-05-17 20:09:30"}
+{"level":"info","message":"Created role: driver","service":"auth-service","timestamp":"2025-05-17 20:09:30"}
+{"level":"info","message":"Created role: warehouse","service":"auth-service","timestamp":"2025-05-17 20:09:30"}
+{"level":"info","message":"Created role: collector","service":"auth-service","timestamp":"2025-05-17 20:09:30"}
+{"level":"info","message":"Created role: customer","service":"auth-service","timestamp":"2025-05-17 20:09:31"}
+{"level":"info","message":"Updated role manager with parent admin","service":"auth-service","timestamp":"2025-05-17 20:09:31"}
+{"level":"info","message":"Updated role courier with parent manager","service":"auth-service","timestamp":"2025-05-17 20:09:31"}
+{"level":"info","message":"Updated role driver with parent manager","service":"auth-service","timestamp":"2025-05-17 20:09:31"}
+{"level":"info","message":"Updated role warehouse with parent manager","service":"auth-service","timestamp":"2025-05-17 20:09:31"}
+{"level":"info","message":"Updated role collector with parent manager","service":"auth-service","timestamp":"2025-05-17 20:09:31"}
+{"level":"info","message":"Assigning permissions to roles...","service":"auth-service","timestamp":"2025-05-17 20:09:31"}
+{"level":"info","message":"Assigned permission users:create to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:31"}
+{"level":"info","message":"Assigned permission users:read to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:31"}
+{"level":"info","message":"Assigned permission users:update to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:31"}
+{"level":"info","message":"Assigned permission users:delete to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:31"}
+{"level":"info","message":"Assigned permission users:list to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:31"}
+{"level":"info","message":"Assigned permission roles:create to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:32"}
+{"level":"info","message":"Assigned permission roles:read to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:32"}
+{"level":"info","message":"Assigned permission roles:update to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:32"}
+{"level":"info","message":"Assigned permission roles:delete to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:32"}
+{"level":"info","message":"Assigned permission roles:list to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:32"}
+{"level":"info","message":"Assigned permission permissions:create to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:32"}
+{"level":"info","message":"Assigned permission permissions:read to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:32"}
+{"level":"info","message":"Assigned permission permissions:update to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:32"}
+{"level":"info","message":"Assigned permission permissions:delete to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:32"}
+{"level":"info","message":"Assigned permission permissions:list to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:33"}
+{"level":"info","message":"Assigned permission user_roles:create to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:33"}
+{"level":"info","message":"Assigned permission user_roles:read to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:33"}
+{"level":"info","message":"Assigned permission user_roles:update to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:33"}
+{"level":"info","message":"Assigned permission user_roles:delete to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:33"}
+{"level":"info","message":"Assigned permission user_roles:list to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:33"}
+{"level":"info","message":"Assigned permission sessions:read to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:33"}
+{"level":"info","message":"Assigned permission sessions:revoke to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:33"}
+{"level":"info","message":"Assigned permission sessions:list to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:33"}
+{"level":"info","message":"Assigned permission security_logs:read to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:34"}
+{"level":"info","message":"Assigned permission security_logs:list to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:34"}
+{"level":"info","message":"Assigned permission shipments:create to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:34"}
+{"level":"info","message":"Assigned permission shipments:read to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:34"}
+{"level":"info","message":"Assigned permission shipments:update to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:34"}
+{"level":"info","message":"Assigned permission shipments:delete to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:34"}
+{"level":"info","message":"Assigned permission shipments:list to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:34"}
+{"level":"info","message":"Assigned permission shipments:track to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:35"}
+{"level":"info","message":"Assigned permission pickups:create to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:35"}
+{"level":"info","message":"Assigned permission pickups:read to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:35"}
+{"level":"info","message":"Assigned permission pickups:update to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:35"}
+{"level":"info","message":"Assigned permission pickups:delete to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:35"}
+{"level":"info","message":"Assigned permission pickups:list to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:35"}
+{"level":"info","message":"Assigned permission pickups:assign to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:35"}
+{"level":"info","message":"Assigned permission pickups:complete to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:35"}
+{"level":"info","message":"Assigned permission deliveries:create to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:35"}
+{"level":"info","message":"Assigned permission deliveries:read to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:36"}
+{"level":"info","message":"Assigned permission deliveries:update to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:36"}
+{"level":"info","message":"Assigned permission deliveries:delete to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:36"}
+{"level":"info","message":"Assigned permission deliveries:list to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:36"}
+{"level":"info","message":"Assigned permission deliveries:assign to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:36"}
+{"level":"info","message":"Assigned permission deliveries:complete to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:36"}
+{"level":"info","message":"Assigned permission payments:create to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:36"}
+{"level":"info","message":"Assigned permission payments:read to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:36"}
+{"level":"info","message":"Assigned permission payments:update to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:37"}
+{"level":"info","message":"Assigned permission payments:delete to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:37"}
+{"level":"info","message":"Assigned permission payments:list to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:37"}
+{"level":"info","message":"Assigned permission payments:process to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:37"}
+{"level":"info","message":"Assigned permission reports:generate to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:37"}
+{"level":"info","message":"Assigned permission reports:read to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:38"}
+{"level":"info","message":"Assigned permission reports:export to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:38"}
+{"level":"info","message":"Assigned permission reports:list to role admin","service":"auth-service","timestamp":"2025-05-17 20:09:38"}
+{"level":"info","message":"Assigned permission users:read to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:38"}
+{"level":"info","message":"Assigned permission users:update to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:38"}
+{"level":"info","message":"Assigned permission users:list to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:38"}
+{"level":"info","message":"Assigned permission roles:read to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:38"}
+{"level":"info","message":"Assigned permission roles:list to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:38"}
+{"level":"info","message":"Assigned permission permissions:read to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:39"}
+{"level":"info","message":"Assigned permission permissions:list to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:40"}
+{"level":"info","message":"Assigned permission user_roles:read to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:40"}
+{"level":"info","message":"Assigned permission user_roles:list to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:40"}
+{"level":"info","message":"Assigned permission sessions:read to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:40"}
+{"level":"info","message":"Assigned permission sessions:revoke to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:40"}
+{"level":"info","message":"Assigned permission sessions:list to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:41"}
+{"level":"info","message":"Assigned permission security_logs:read to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:41"}
+{"level":"info","message":"Assigned permission security_logs:list to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:41"}
+{"level":"info","message":"Assigned permission shipments:create to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:41"}
+{"level":"info","message":"Assigned permission shipments:read to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:42"}
+{"level":"info","message":"Assigned permission shipments:update to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:42"}
+{"level":"info","message":"Assigned permission shipments:delete to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:42"}
+{"level":"info","message":"Assigned permission shipments:list to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:42"}
+{"level":"info","message":"Assigned permission shipments:track to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:42"}
+{"level":"info","message":"Assigned permission pickups:create to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:42"}
+{"level":"info","message":"Assigned permission pickups:read to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:42"}
+{"level":"info","message":"Assigned permission pickups:update to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:42"}
+{"level":"info","message":"Assigned permission pickups:delete to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:42"}
+{"level":"info","message":"Assigned permission pickups:list to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:43"}
+{"level":"info","message":"Assigned permission pickups:assign to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:43"}
+{"level":"info","message":"Assigned permission pickups:complete to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:43"}
+{"level":"info","message":"Assigned permission deliveries:create to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:43"}
+{"level":"info","message":"Assigned permission deliveries:read to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:43"}
+{"level":"info","message":"Assigned permission deliveries:update to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:43"}
+{"level":"info","message":"Assigned permission deliveries:delete to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:43"}
+{"level":"info","message":"Assigned permission deliveries:list to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:43"}
+{"level":"info","message":"Assigned permission deliveries:assign to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:43"}
+{"level":"info","message":"Assigned permission deliveries:complete to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:44"}
+{"level":"info","message":"Assigned permission payments:create to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:44"}
+{"level":"info","message":"Assigned permission payments:read to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:44"}
+{"level":"info","message":"Assigned permission payments:update to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:44"}
+{"level":"info","message":"Assigned permission payments:delete to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:44"}
+{"level":"info","message":"Assigned permission payments:list to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:44"}
+{"level":"info","message":"Assigned permission payments:process to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:44"}
+{"level":"info","message":"Assigned permission reports:generate to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:45"}
+{"level":"info","message":"Assigned permission reports:read to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:45"}
+{"level":"info","message":"Assigned permission reports:export to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:45"}
+{"level":"info","message":"Assigned permission reports:list to role manager","service":"auth-service","timestamp":"2025-05-17 20:09:45"}
+{"level":"info","message":"Assigned permission users:read to role courier","service":"auth-service","timestamp":"2025-05-17 20:09:45"}
+{"level":"info","message":"Assigned permission shipments:read to role courier","service":"auth-service","timestamp":"2025-05-17 20:09:45"}
+{"level":"info","message":"Assigned permission shipments:update to role courier","service":"auth-service","timestamp":"2025-05-17 20:09:45"}
+{"level":"info","message":"Assigned permission shipments:list to role courier","service":"auth-service","timestamp":"2025-05-17 20:09:45"}
+{"level":"info","message":"Assigned permission shipments:track to role courier","service":"auth-service","timestamp":"2025-05-17 20:09:46"}
+{"level":"info","message":"Assigned permission pickups:read to role courier","service":"auth-service","timestamp":"2025-05-17 20:09:46"}
+{"level":"info","message":"Assigned permission pickups:update to role courier","service":"auth-service","timestamp":"2025-05-17 20:09:46"}
+{"level":"info","message":"Assigned permission pickups:list to role courier","service":"auth-service","timestamp":"2025-05-17 20:09:46"}
+{"level":"info","message":"Assigned permission pickups:complete to role courier","service":"auth-service","timestamp":"2025-05-17 20:09:46"}
+{"level":"info","message":"Assigned permission sessions:read to role courier","service":"auth-service","timestamp":"2025-05-17 20:09:46"}
+{"level":"info","message":"Assigned permission security_logs:read to role courier","service":"auth-service","timestamp":"2025-05-17 20:09:46"}
+{"level":"info","message":"Assigned permission users:read to role driver","service":"auth-service","timestamp":"2025-05-17 20:09:46"}
+{"level":"info","message":"Assigned permission shipments:read to role driver","service":"auth-service","timestamp":"2025-05-17 20:09:46"}
+{"level":"info","message":"Assigned permission shipments:update to role driver","service":"auth-service","timestamp":"2025-05-17 20:09:47"}
+{"level":"info","message":"Assigned permission shipments:list to role driver","service":"auth-service","timestamp":"2025-05-17 20:09:47"}
+{"level":"info","message":"Assigned permission shipments:track to role driver","service":"auth-service","timestamp":"2025-05-17 20:09:47"}
+{"level":"info","message":"Assigned permission deliveries:read to role driver","service":"auth-service","timestamp":"2025-05-17 20:09:47"}
+{"level":"info","message":"Assigned permission deliveries:update to role driver","service":"auth-service","timestamp":"2025-05-17 20:09:47"}
+{"level":"info","message":"Assigned permission deliveries:list to role driver","service":"auth-service","timestamp":"2025-05-17 20:09:47"}
+{"level":"info","message":"Assigned permission deliveries:complete to role driver","service":"auth-service","timestamp":"2025-05-17 20:09:47"}
+{"level":"info","message":"Assigned permission sessions:read to role driver","service":"auth-service","timestamp":"2025-05-17 20:09:47"}
+{"level":"info","message":"Assigned permission security_logs:read to role driver","service":"auth-service","timestamp":"2025-05-17 20:09:48"}
+{"level":"info","message":"Assigned permission users:read to role warehouse","service":"auth-service","timestamp":"2025-05-17 20:09:48"}
+{"level":"info","message":"Assigned permission shipments:read to role warehouse","service":"auth-service","timestamp":"2025-05-17 20:09:48"}
+{"level":"info","message":"Assigned permission shipments:update to role warehouse","service":"auth-service","timestamp":"2025-05-17 20:09:48"}
+{"level":"info","message":"Assigned permission shipments:list to role warehouse","service":"auth-service","timestamp":"2025-05-17 20:09:48"}
+{"level":"info","message":"Assigned permission shipments:track to role warehouse","service":"auth-service","timestamp":"2025-05-17 20:09:48"}
+{"level":"info","message":"Assigned permission pickups:read to role warehouse","service":"auth-service","timestamp":"2025-05-17 20:09:48"}
+{"level":"info","message":"Assigned permission pickups:list to role warehouse","service":"auth-service","timestamp":"2025-05-17 20:09:48"}
+{"level":"info","message":"Assigned permission deliveries:read to role warehouse","service":"auth-service","timestamp":"2025-05-17 20:09:48"}
+{"level":"info","message":"Assigned permission deliveries:list to role warehouse","service":"auth-service","timestamp":"2025-05-17 20:09:49"}
+{"level":"info","message":"Assigned permission sessions:read to role warehouse","service":"auth-service","timestamp":"2025-05-17 20:09:49"}
+{"level":"info","message":"Assigned permission security_logs:read to role warehouse","service":"auth-service","timestamp":"2025-05-17 20:09:49"}
+{"level":"info","message":"Assigned permission users:read to role collector","service":"auth-service","timestamp":"2025-05-17 20:09:49"}
+{"level":"info","message":"Assigned permission shipments:read to role collector","service":"auth-service","timestamp":"2025-05-17 20:09:49"}
+{"level":"info","message":"Assigned permission shipments:list to role collector","service":"auth-service","timestamp":"2025-05-17 20:09:49"}
+{"level":"info","message":"Assigned permission shipments:track to role collector","service":"auth-service","timestamp":"2025-05-17 20:09:49"}
+{"level":"info","message":"Assigned permission payments:read to role collector","service":"auth-service","timestamp":"2025-05-17 20:09:49"}
+{"level":"info","message":"Assigned permission payments:update to role collector","service":"auth-service","timestamp":"2025-05-17 20:09:50"}
+{"level":"info","message":"Assigned permission payments:list to role collector","service":"auth-service","timestamp":"2025-05-17 20:09:50"}
+{"level":"info","message":"Assigned permission payments:process to role collector","service":"auth-service","timestamp":"2025-05-17 20:09:50"}
+{"level":"info","message":"Assigned permission sessions:read to role collector","service":"auth-service","timestamp":"2025-05-17 20:09:50"}
+{"level":"info","message":"Assigned permission security_logs:read to role collector","service":"auth-service","timestamp":"2025-05-17 20:09:50"}
+{"level":"info","message":"Assigned permission shipments:create to role customer","service":"auth-service","timestamp":"2025-05-17 20:09:51"}
+{"level":"info","message":"Assigned permission shipments:read to role customer","service":"auth-service","timestamp":"2025-05-17 20:09:51"}
+{"level":"info","message":"Assigned permission shipments:list to role customer","service":"auth-service","timestamp":"2025-05-17 20:09:51"}
+{"level":"info","message":"Assigned permission shipments:track to role customer","service":"auth-service","timestamp":"2025-05-17 20:09:51"}
+{"level":"info","message":"Assigned permission pickups:create to role customer","service":"auth-service","timestamp":"2025-05-17 20:09:51"}
+{"level":"info","message":"Assigned permission pickups:read to role customer","service":"auth-service","timestamp":"2025-05-17 20:09:52"}
+{"level":"info","message":"Assigned permission pickups:list to role customer","service":"auth-service","timestamp":"2025-05-17 20:09:52"}
+{"level":"info","message":"Assigned permission payments:read to role customer","service":"auth-service","timestamp":"2025-05-17 20:09:52"}
+{"level":"info","message":"Assigned permission payments:list to role customer","service":"auth-service","timestamp":"2025-05-17 20:09:52"}
+{"level":"info","message":"Assigned permission sessions:read to role customer","service":"auth-service","timestamp":"2025-05-17 20:09:52"}
+{"level":"info","message":"Assigning admin role to admin users...","service":"auth-service","timestamp":"2025-05-17 20:09:52"}
+{"level":"info","message":"Assigned admin role to user admin@samudrapaket.com","service":"auth-service","timestamp":"2025-05-17 20:09:52"}
+{"level":"info","message":"Role and permission seeder completed successfully","service":"auth-service","timestamp":"2025-05-17 20:09:52"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-17 20:13:39"}
