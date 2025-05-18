@@ -48,6 +48,12 @@ const runSeeders = async () => {
       await seedEmployees(TEST_USER_ID);
       logger.info('Employee seeder completed successfully');
       
+      // Run attendance seeder
+      logger.info('Running attendance seeder...');
+      const { seedAttendanceData } = require('../config/seeders/attendanceSeeder');
+      await seedAttendanceData();
+      logger.info('Attendance seeder completed successfully');
+      
       logger.info('All seeders completed successfully');
     } catch (seedError) {
       logger.error('Error in seeder execution:', seedError);

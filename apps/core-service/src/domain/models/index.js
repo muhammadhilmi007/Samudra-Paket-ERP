@@ -15,6 +15,14 @@ const OrganizationalChange = require('./OrganizationalChange');
 const Employee = require('./Employee');
 const EmployeeHistory = require('./EmployeeHistory');
 
+// Attendance Management Models
+const Attendance = require('./Attendance');
+const Leave = require('./Leave');
+const LeaveBalance = require('./LeaveBalance');
+const WorkSchedule = require('./WorkSchedule');
+const EmployeeSchedule = require('./EmployeeSchedule');
+const Holiday = require('./Holiday');
+
 module.exports = {
   Branch,
   ServiceArea,
@@ -26,5 +34,13 @@ module.exports = {
   Position,
   OrganizationalChange,
   Employee,
-  EmployeeHistory
+  EmployeeHistory,
+  
+  // Attendance Management Models
+  Attendance,
+  Leave,
+  LeaveBalance,
+  WorkSchedule,
+  EmployeeSchedule,
+  Holiday
 };

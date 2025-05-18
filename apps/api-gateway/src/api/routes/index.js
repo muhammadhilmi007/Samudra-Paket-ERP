@@ -14,6 +14,11 @@ const roleRoutes = require('./roleRoutes');
 const permissionRoutes = require('./permissionRoutes');
 const userRoleRoutes = require('./userRoleRoutes');
 
+// Attendance Management Routes
+const attendanceRoutes = require('./attendanceRoutes');
+const leaveRoutes = require('./leaveRoutes');
+const scheduleRoutes = require('./scheduleRoutes');
+
 /**
  * Configure API routes for the gateway
  * @param {Object} app - Express application instance
@@ -39,6 +44,11 @@ const configureRoutes = (app) => {
     process.env.CORE_SERVICE_URL || 'http://localhost:3002',
     { '^/core': '/api' }
   ));
+  
+  // Attendance Management Routes
+  v1Router.use('/core/attendance', attendanceRoutes);
+  v1Router.use('/core/leave', leaveRoutes);
+  v1Router.use('/core/schedule', scheduleRoutes);
 
   // Operations Service
   v1Router.use('/operations', authenticateJWT, cacheMiddleware, createCircuitBreakerProxy(

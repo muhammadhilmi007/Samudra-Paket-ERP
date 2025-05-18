@@ -17,6 +17,11 @@ const positionRoutes = require('./positionRoutes');
 const organizationalChangeRoutes = require('./organizationalChangeRoutes');
 const employeeRoutes = require('./employeeRoutes');
 
+// Attendance Management Routes
+const attendanceRoutes = require('./attendanceRoutes');
+const leaveRoutes = require('./leaveRoutes');
+const scheduleRoutes = require('./scheduleRoutes');
+
 // Register routes
 router.use('/branches', branchRoutes);
 router.use('/service-areas', serviceAreaRoutes);
@@ -27,6 +32,11 @@ router.use('/divisions', divisionRoutes);
 router.use('/positions', positionRoutes);
 router.use('/organizational-changes', organizationalChangeRoutes);
 router.use('/employees', employeeRoutes);
+
+// Register Attendance Management Routes
+router.use('/attendance', attendanceRoutes);
+router.use('/leave', leaveRoutes);
+router.use('/schedule', scheduleRoutes);
 
 // Health check endpoint
 router.get('/health', (req, res) => {

@@ -40,7 +40,9 @@ dotenv.config();
 
 // Create Express app
 const app = express();
-const PORT = process.env.PORT || 3000;
+
+// Set port
+const PORT = process.env.PORT || 3003;
 
 // Request tracing middleware
 app.use(requestTracingMiddleware);

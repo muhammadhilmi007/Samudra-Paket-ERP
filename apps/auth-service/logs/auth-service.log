@@ -621,3 +621,5 @@
 {"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-18 11:37:45"}
 {"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-18 13:27:28"}
 {"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-18 14:09:12"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-18 14:22:06"}
+{"level":"info","message":"Connected to Redis","service":"auth-service","timestamp":"2025-05-18 20:29:21"}

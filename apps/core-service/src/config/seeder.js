@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 const { Branch } = require('../domain/models');
 const { logger } = require('../utils');
 const seedServiceAreas = require('./seeders/serviceAreaSeeder');
+const { seedAttendanceData, destroyAttendanceData } = require('./seeders/attendanceSeeder');
 
 /**
  * Initial branch data
@@ -186,6 +187,10 @@ const importData = async () => {
     
     // Seed service areas
     await seedServiceAreas();
+    
+    // Seed attendance data
+    await seedAttendanceData();
+    
     logger.info('All seed data import completed');
     process.exit();
   } catch (error) {
@@ -218,6 +223,10 @@ const destroyData = async () => {
     await BranchServiceArea.deleteMany();
     await ServiceAreaHistory.deleteMany();
     logger.info('All service area data deleted');
+    
+    // Clear attendance data
+    await destroyAttendanceData();
+    logger.info('All attendance data deleted');
     
     process.exit();
   } catch (error) {

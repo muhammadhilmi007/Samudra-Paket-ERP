@@ -4,6 +4,7 @@
  */
 
 const { authenticateJWT } = require('./authMiddleware');
+const { checkRole } = require('./authorizationMiddleware');
 const { cacheMiddleware, redisClient } = require('./cacheMiddleware');
 const { createCircuitBreakerProxy } = require('./circuitBreakerMiddleware');
 const { notFoundHandler, errorHandler } = require('./errorMiddleware');
@@ -23,6 +24,7 @@ const {
 module.exports = {
   // Authentication
   authenticateJWT,
+  checkRole,
   
   // Caching
   cacheMiddleware,
