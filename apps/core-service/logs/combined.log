@@ -352,3 +352,313 @@
 {"level":"info","message":"::1 - - [17/May/2025:13:38:45 +0000] \"POST /api/service-area-assignments HTTP/1.1\" 404 46 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 20:38:45"}
 {"level":"info","message":"::1 - - [17/May/2025:13:40:14 +0000] \"POST /api/service-areas/geospatial/find-by-location HTTP/1.1\" 400 216 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 20:40:14"}
 {"level":"info","message":"::1 - - [17/May/2025:13:50:04 +0000] \"GET /api/service-areas?page=1&limit=10&status=ACTIVE&areaType=INNER_CITY&adminLevel=PROVINCE HTTP/1.1\" 200 81 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 20:50:04"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-17 21:46:07"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-17 21:46:08"}
+{"level":"info","message":"::1 - - [17/May/2025:14:46:16 +0000] \"GET /api-docs/ HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:46:16"}
+{"level":"info","message":"::1 - - [17/May/2025:14:46:17 +0000] \"GET /api-docs/swagger-ui.css HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:46:17"}
+{"level":"info","message":"::1 - - [17/May/2025:14:46:17 +0000] \"GET /api-docs/swagger-ui-bundle.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:46:17"}
+{"level":"info","message":"::1 - - [17/May/2025:14:46:17 +0000] \"GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:46:17"}
+{"level":"info","message":"::1 - - [17/May/2025:14:46:17 +0000] \"GET /api-docs/swagger-ui-init.js HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:46:17"}
+{"level":"info","message":"::1 - - [17/May/2025:14:46:17 +0000] \"GET /api-docs/favicon-32x32.png HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:46:17"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-17 21:50:42"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-17 21:50:42"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-17 21:51:18"}
+{"level":"error","message":"Error running tests: Schema hasn't been registered for model \"ServiceArea\".\nUse mongoose.model(name, schema)","service":"core-service","stack":"MissingSchemaError: Schema hasn't been registered for model \"ServiceArea\".\nUse mongoose.model(name, schema)\n    at Mongoose.model (D:\\sarana-erp\\node_modules\\mongoose\\lib\\index.js:554:13)\n    at runTests (D:\\sarana-erp\\apps\\core-service\\src\\scripts\\test-service-area-api.js:212:34)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-05-17 21:51:18"}
+{"level":"info","message":"Starting division and position seeder...","service":"core-service","timestamp":"2025-05-17 21:51:59"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://mongo:HpmyPloqcCXAQdHoTRXmOGbnOYRqyufP@nozomi.proxy.rlwy.net:22764...","service":"core-service","timestamp":"2025-05-17 21:51:59"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-17 21:52:00"}
+{"level":"info","message":"Starting division and position seeding...","service":"core-service","timestamp":"2025-05-17 21:52:00"}
+{"level":"info","message":"Creating divisions...","service":"core-service","timestamp":"2025-05-17 21:52:01"}
+{"level":"info","message":"Divisions created successfully","service":"core-service","timestamp":"2025-05-17 21:52:02"}
+{"level":"info","message":"Creating positions...","service":"core-service","timestamp":"2025-05-17 21:52:02"}
+{"level":"info","message":"Positions created successfully","service":"core-service","timestamp":"2025-05-17 21:52:04"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-17 21:52:10"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-17 21:52:10"}
+{"level":"info","message":"::1 - - [17/May/2025:14:53:58 +0000] \"GET /api/api/divisions HTTP/1.1\" 404 156 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:53:58"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-17 21:54:31"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-17 21:54:31"}
+{"level":"info","message":"::1 - - [17/May/2025:14:54:33 +0000] \"GET /api-docs/ HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:54:33"}
+{"level":"info","message":"::1 - - [17/May/2025:14:54:33 +0000] \"GET /api-docs/swagger-ui.css HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:54:33"}
+{"level":"info","message":"::1 - - [17/May/2025:14:54:33 +0000] \"GET /api-docs/swagger-ui-bundle.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:54:33"}
+{"level":"info","message":"::1 - - [17/May/2025:14:54:33 +0000] \"GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:54:33"}
+{"level":"info","message":"::1 - - [17/May/2025:14:54:33 +0000] \"GET /api-docs/swagger-ui-init.js HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:54:33"}
+{"level":"info","message":"::1 - - [17/May/2025:14:54:33 +0000] \"GET /api-docs/favicon-32x32.png HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:54:33"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-17 21:55:01"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-17 21:55:02"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-17 21:55:05"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-17 21:55:05"}
+{"level":"info","message":"::1 - - [17/May/2025:14:55:06 +0000] \"GET /api-docs/ HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:55:06"}
+{"level":"info","message":"::1 - - [17/May/2025:14:55:06 +0000] \"GET /api-docs/swagger-ui.css HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:55:06"}
+{"level":"info","message":"::1 - - [17/May/2025:14:55:06 +0000] \"GET /api-docs/swagger-ui-bundle.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:55:06"}
+{"level":"info","message":"::1 - - [17/May/2025:14:55:06 +0000] \"GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:55:06"}
+{"level":"info","message":"::1 - - [17/May/2025:14:55:06 +0000] \"GET /api-docs/swagger-ui-init.js HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:55:06"}
+{"level":"info","message":"::1 - - [17/May/2025:14:55:07 +0000] \"GET /api-docs/favicon-32x32.png HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:55:07"}
+{"level":"info","message":"::1 - - [17/May/2025:14:55:37 +0000] \"GET /api/divisions HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:55:37"}
+{"level":"info","message":"::1 - - [17/May/2025:14:55:49 +0000] \"GET /api/divisions/hierarchy HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:55:49"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-17 21:56:12"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-17 21:56:13"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-17 21:56:15"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-17 21:56:16"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-17 21:56:19"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-17 21:56:19"}
+{"level":"info","message":"::1 - - [17/May/2025:14:56:20 +0000] \"GET /api-docs/ HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:56:20"}
+{"level":"info","message":"::1 - - [17/May/2025:14:56:20 +0000] \"GET /api-docs/swagger-ui.css HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:56:20"}
+{"level":"info","message":"::1 - - [17/May/2025:14:56:20 +0000] \"GET /api-docs/swagger-ui-bundle.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:56:20"}
+{"level":"info","message":"::1 - - [17/May/2025:14:56:20 +0000] \"GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:56:20"}
+{"level":"info","message":"::1 - - [17/May/2025:14:56:20 +0000] \"GET /api-docs/swagger-ui-init.js HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:56:20"}
+{"level":"info","message":"::1 - - [17/May/2025:14:56:21 +0000] \"GET /api-docs/favicon-32x32.png HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:56:21"}
+{"level":"info","message":"::1 - - [17/May/2025:14:56:32 +0000] \"GET /api/positions HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:56:32"}
+{"level":"info","message":"::1 - - [17/May/2025:14:56:45 +0000] \"GET /api/positions/organization-chart HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-17 21:56:45"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 05:54:00"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 05:54:00"}
+{"level":"info","message":"::1 - - [17/May/2025:22:54:54 +0000] \"GET /api-docs/ HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 05:54:54"}
+{"level":"info","message":"::1 - - [17/May/2025:22:54:55 +0000] \"GET /api-docs/swagger-ui.css HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 05:54:55"}
+{"level":"info","message":"::1 - - [17/May/2025:22:54:55 +0000] \"GET /api-docs/swagger-ui-bundle.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 05:54:55"}
+{"level":"info","message":"::1 - - [17/May/2025:22:54:55 +0000] \"GET /api-docs/swagger-ui-init.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 05:54:55"}
+{"level":"info","message":"::1 - - [17/May/2025:22:54:55 +0000] \"GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 05:54:55"}
+{"level":"info","message":"::1 - - [17/May/2025:22:55:37 +0000] \"GET /api-docs/ HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36\"","service":"core-service","timestamp":"2025-05-18 05:55:37"}
+{"level":"info","message":"::1 - - [17/May/2025:22:55:37 +0000] \"GET /api-docs/swagger-ui-init.js HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36\"","service":"core-service","timestamp":"2025-05-18 05:55:37"}
+{"level":"info","message":"::1 - - [17/May/2025:22:55:37 +0000] \"GET /api-docs/swagger-ui.css HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36\"","service":"core-service","timestamp":"2025-05-18 05:55:37"}
+{"level":"info","message":"::1 - - [17/May/2025:22:55:37 +0000] \"GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36\"","service":"core-service","timestamp":"2025-05-18 05:55:37"}
+{"level":"info","message":"::1 - - [17/May/2025:22:55:37 +0000] \"GET /api-docs/swagger-ui-bundle.js HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36\"","service":"core-service","timestamp":"2025-05-18 05:55:37"}
+{"level":"info","message":"::1 - - [17/May/2025:22:55:38 +0000] \"GET /api-docs/favicon-32x32.png HTTP/1.1\" 200 628 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36\"","service":"core-service","timestamp":"2025-05-18 05:55:38"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 06:04:31"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 06:04:31"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 06:04:52"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 06:04:53"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 06:05:21"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 06:05:21"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 06:05:43"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 06:05:44"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 06:07:59"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 06:07:59"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 08:19:22"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 08:19:23"}
+{"level":"info","message":"::1 - - [18/May/2025:01:20:17 +0000] \"GET /api-docs/ HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 08:20:17"}
+{"level":"info","message":"::1 - - [18/May/2025:01:20:18 +0000] \"GET /api-docs/swagger-ui.css HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 08:20:18"}
+{"level":"info","message":"::1 - - [18/May/2025:01:20:18 +0000] \"GET /api-docs/swagger-ui-bundle.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 08:20:18"}
+{"level":"info","message":"::1 - - [18/May/2025:01:20:18 +0000] \"GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 08:20:18"}
+{"level":"info","message":"::1 - - [18/May/2025:01:20:18 +0000] \"GET /api-docs/swagger-ui-init.js HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 08:20:18"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 08:22:33"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 08:22:34"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 08:22:40"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 08:22:40"}
+{"level":"info","message":"::1 - - [18/May/2025:01:22:41 +0000] \"GET /api-docs/ HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 08:22:41"}
+{"level":"info","message":"::1 - - [18/May/2025:01:22:41 +0000] \"GET /api-docs/swagger-ui.css HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 08:22:41"}
+{"level":"info","message":"::1 - - [18/May/2025:01:22:41 +0000] \"GET /api-docs/swagger-ui-bundle.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 08:22:41"}
+{"level":"info","message":"::1 - - [18/May/2025:01:22:41 +0000] \"GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 08:22:41"}
+{"level":"info","message":"::1 - - [18/May/2025:01:22:41 +0000] \"GET /api-docs/swagger-ui-init.js HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 08:22:41"}
+{"level":"info","message":"::1 - - [18/May/2025:01:22:41 +0000] \"GET /api-docs/favicon-32x32.png HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 08:22:41"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 08:23:56"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 08:23:56"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 08:24:12"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 08:24:13"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 08:24:21"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 08:24:21"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 08:24:32"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 08:24:34"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 08:24:51"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 08:24:51"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 08:25:00"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 08:25:01"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 08:25:07"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 08:25:07"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 08:25:24"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 08:25:24"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 08:25:38"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 08:25:38"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 08:26:46"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 08:26:47"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 08:27:20"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 08:27:21"}
+{"level":"warn","message":"MongoDB disconnected","service":"core-service","timestamp":"2025-05-18 10:32:47"}
+{"level":"warn","message":"MongoDB disconnected","service":"core-service","timestamp":"2025-05-18 10:33:38"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:40:04"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:40:04"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:44:32"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:44:33"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:44:52"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:44:52"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:45:00"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:45:00"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:45:33"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:45:33"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:45:42"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:45:44"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:45:48"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:45:49"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:45:57"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:45:57"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:46:07"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:46:08"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:46:21"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:46:22"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:46:38"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:46:39"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:46:44"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:46:44"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:46:52"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:46:53"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:47:13"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:47:13"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:47:25"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:47:26"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:47:36"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:47:36"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:47:43"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:47:44"}
+{"level":"info","message":"::1 - - [18/May/2025:03:47:51 +0000] \"GET /api-docs/ HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:47:51"}
+{"level":"info","message":"::1 - - [18/May/2025:03:47:51 +0000] \"GET /api-docs/swagger-ui.css HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:47:51"}
+{"level":"info","message":"::1 - - [18/May/2025:03:47:51 +0000] \"GET /api-docs/swagger-ui-bundle.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:47:51"}
+{"level":"info","message":"::1 - - [18/May/2025:03:47:51 +0000] \"GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:47:51"}
+{"level":"info","message":"::1 - - [18/May/2025:03:47:51 +0000] \"GET /api-docs/swagger-ui-init.js HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:47:51"}
+{"level":"info","message":"::1 - - [18/May/2025:03:47:52 +0000] \"GET /api-docs/favicon-32x32.png HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:47:52"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:51:27"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:51:27"}
+{"level":"info","message":"::1 - - [18/May/2025:03:52:46 +0000] \"GET /api-docs/ HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:52:46"}
+{"level":"info","message":"::1 - - [18/May/2025:03:52:46 +0000] \"GET /api-docs/swagger-ui-init.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:52:46"}
+{"level":"info","message":"::1 - - [18/May/2025:03:52:46 +0000] \"GET /api-docs/swagger-ui.css HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:52:46"}
+{"level":"info","message":"::1 - - [18/May/2025:03:52:46 +0000] \"GET /api-docs/swagger-ui-bundle.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:52:46"}
+{"level":"info","message":"::1 - - [18/May/2025:03:52:46 +0000] \"GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:52:46"}
+{"level":"info","message":"::1 - - [18/May/2025:03:52:46 +0000] \"GET /api-docs/favicon-32x32.png HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:52:46"}
+{"level":"info","message":"::1 - - [18/May/2025:03:52:58 +0000] \"GET /api-docs/ HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:52:58"}
+{"level":"info","message":"::1 - - [18/May/2025:03:52:58 +0000] \"GET /api-docs/swagger-ui-init.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:52:58"}
+{"level":"info","message":"::1 - - [18/May/2025:03:52:58 +0000] \"GET /api-docs/swagger-ui.css HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:52:58"}
+{"level":"info","message":"::1 - - [18/May/2025:03:52:58 +0000] \"GET /api-docs/swagger-ui-bundle.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:52:58"}
+{"level":"info","message":"::1 - - [18/May/2025:03:52:58 +0000] \"GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:52:58"}
+{"level":"info","message":"::1 - - [18/May/2025:03:52:58 +0000] \"GET /api-docs/favicon-32x32.png HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:52:58"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:56:12"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:56:12"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 10:56:27"}
+{"level":"info","message":"::1 - - [18/May/2025:03:56:27 +0000] \"GET /api-docs/ HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:56:27"}
+{"level":"info","message":"::1 - - [18/May/2025:03:56:28 +0000] \"GET /api-docs/swagger-ui.css HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:56:28"}
+{"level":"info","message":"::1 - - [18/May/2025:03:56:28 +0000] \"GET /api-docs/swagger-ui-bundle.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:56:28"}
+{"level":"info","message":"::1 - - [18/May/2025:03:56:28 +0000] \"GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:56:28"}
+{"level":"info","message":"::1 - - [18/May/2025:03:56:28 +0000] \"GET /api-docs/swagger-ui-init.js HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:56:28"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 10:56:28"}
+{"level":"info","message":"::1 - - [18/May/2025:03:56:28 +0000] \"GET /api-docs/favicon-32x32.png HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 10:56:28"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 11:02:31"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 11:02:31"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 11:04:02"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 11:04:03"}
+{"level":"info","message":"::1 - - [18/May/2025:04:04:04 +0000] \"GET /api-docs/ HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 11:04:04"}
+{"level":"info","message":"::1 - - [18/May/2025:04:04:05 +0000] \"GET /api-docs/swagger-ui.css HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 11:04:05"}
+{"level":"info","message":"::1 - - [18/May/2025:04:04:05 +0000] \"GET /api-docs/swagger-ui-init.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 11:04:05"}
+{"level":"info","message":"::1 - - [18/May/2025:04:04:05 +0000] \"GET /api-docs/swagger-ui-bundle.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 11:04:05"}
+{"level":"info","message":"::1 - - [18/May/2025:04:04:05 +0000] \"GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 11:04:05"}
+{"level":"info","message":"::1 - - [18/May/2025:04:04:06 +0000] \"GET /api-docs/favicon-32x32.png HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 11:04:06"}
+{"level":"error","message":"Authentication error: Authentication required","name":"ApplicationError","service":"core-service","stack":"ApplicationError: Authentication required\n    at authenticate (D:\\sarana-erp\\apps\\core-service\\src\\api\\middlewares\\auth.js:21:13)\n    at Layer.handleRequest (D:\\sarana-erp\\node_modules\\router\\lib\\layer.js:152:17)\n    at trimPrefix (D:\\sarana-erp\\node_modules\\router\\index.js:342:13)\n    at D:\\sarana-erp\\node_modules\\router\\index.js:297:9\n    at processParams (D:\\sarana-erp\\node_modules\\router\\index.js:582:12)\n    at next (D:\\sarana-erp\\node_modules\\router\\index.js:291:5)\n    at Function.handle (D:\\sarana-erp\\node_modules\\router\\index.js:186:3)\n    at router (D:\\sarana-erp\\node_modules\\router\\index.js:60:12)\n    at Layer.handleRequest (D:\\sarana-erp\\node_modules\\router\\lib\\layer.js:152:17)\n    at trimPrefix (D:\\sarana-erp\\node_modules\\router\\index.js:342:13)","statusCode":401,"timestamp":"2025-05-18 11:04:25"}
+{"level":"info","message":"::1 - - [18/May/2025:04:04:25 +0000] \"GET /api/employees?page=1&limit=10&status=ACTIVE&sortBy=createdAt&sortOrder=desc HTTP/1.1\" 401 53 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 11:04:25"}
+{"level":"info","message":"::1 - - [18/May/2025:04:17:05 +0000] \"GET /api/employees?page=1&limit=10&status=ACTIVE&sortBy=createdAt&sortOrder=desc HTTP/1.1\" 200 126 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 11:17:05"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 11:18:02"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 11:18:03"}
+{"level":"info","message":"MongoDB Connected","service":"core-service","timestamp":"2025-05-18 11:20:45"}
+{"level":"info","message":"Existing branch data cleared","service":"core-service","timestamp":"2025-05-18 11:20:45"}
+{"level":"info","message":"Head Office created: Head Office","service":"core-service","timestamp":"2025-05-18 11:20:45"}
+{"level":"info","message":"2 regional branches created","service":"core-service","timestamp":"2025-05-18 11:20:46"}
+{"level":"info","message":"Branch data import completed","service":"core-service","timestamp":"2025-05-18 11:20:46"}
+{"level":"info","message":"Service areas already seeded, skipping...","service":"core-service","timestamp":"2025-05-18 11:20:46"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 11:21:26"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://mongo:HpmyPloqcCXAQdHoTRXmOGbnOYRqyufP@nozomi.proxy.rlwy.net:22764...","service":"core-service","timestamp":"2025-05-18 11:21:26"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 11:21:28"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 11:21:28"}
+{"level":"error","message":"Error seeding employees: Cannot read properties of undefined (reading '_id')","service":"core-service","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at seedEmployees (D:\\sarana-erp\\apps\\core-service\\src\\config\\seeders\\employeeSeeder.js:448:70)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async runSeeder (D:\\sarana-erp\\apps\\core-service\\src\\scripts\\run-employee-seeder.js:33:5)","timestamp":"2025-05-18 11:21:29"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 11:25:29"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://mongo:HpmyPloqcCXAQdHoTRXmOGbnOYRqyufP@nozomi.proxy.rlwy.net:22764...","service":"core-service","timestamp":"2025-05-18 11:25:29"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 11:25:29"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 11:25:29"}
+{"level":"error","message":"Error seeding employees: Cannot read properties of undefined (reading '_id')","service":"core-service","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at seedEmployees (D:\\sarana-erp\\apps\\core-service\\src\\config\\seeders\\employeeSeeder.js:448:70)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async runSeeder (D:\\sarana-erp\\apps\\core-service\\src\\scripts\\run-employee-seeder.js:33:5)","timestamp":"2025-05-18 11:25:29"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 11:28:02"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://mongo:HpmyPloqcCXAQdHoTRXmOGbnOYRqyufP@nozomi.proxy.rlwy.net:22764...","service":"core-service","timestamp":"2025-05-18 11:28:02"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 11:28:02"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 11:28:02"}
+{"level":"error","message":"Error seeding employees: Cannot read properties of undefined (reading '_id')","service":"core-service","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at seedEmployees (D:\\sarana-erp\\apps\\core-service\\src\\config\\seeders\\employeeSeeder.js:448:70)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async runSeeder (D:\\sarana-erp\\apps\\core-service\\src\\scripts\\run-employee-seeder.js:33:5)","timestamp":"2025-05-18 11:28:03"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 11:37:50"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 11:37:51"}
+{"error":{"_message":"Employee validation failed","errors":{"currentBranch":{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"string\" (type string) at path \"currentBranch\" because of \"BSONTypeError\"","name":"CastError","path":"currentBranch","reason":{},"stringValue":"\"string\"","value":"string","valueType":"string"},"currentDivision":{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"string\" (type string) at path \"currentDivision\" because of \"BSONTypeError\"","name":"CastError","path":"currentDivision","reason":{},"stringValue":"\"string\"","value":"string","valueType":"string"},"currentPosition":{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"string\" (type string) at path \"currentPosition\" because of \"BSONTypeError\"","name":"CastError","path":"currentPosition","reason":{},"stringValue":"\"string\"","value":"string","valueType":"string"}},"message":"Employee validation failed: currentBranch: Cast to ObjectId failed for value \"string\" (type string) at path \"currentBranch\" because of \"BSONTypeError\", currentDivision: Cast to ObjectId failed for value \"string\" (type string) at path \"currentDivision\" because of \"BSONTypeError\", currentPosition: Cast to ObjectId failed for value \"string\" (type string) at path \"currentPosition\" because of \"BSONTypeError\"","name":"ValidationError"},"level":"error","message":"Unhandled error: Employee validation failed: currentBranch: Cast to ObjectId failed for value \"string\" (type string) at path \"currentBranch\" because of \"BSONTypeError\", currentDivision: Cast to ObjectId failed for value \"string\" (type string) at path \"currentDivision\" because of \"BSONTypeError\", currentPosition: Cast to ObjectId failed for value \"string\" (type string) at path \"currentPosition\" because of \"BSONTypeError\"","service":"core-service","timestamp":"2025-05-18 11:38:28"}
+{"level":"info","message":"::1 - - [18/May/2025:04:38:28 +0000] \"POST /api/employees HTTP/1.1\" 500 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 11:38:28"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 11:38:49"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://mongo:HpmyPloqcCXAQdHoTRXmOGbnOYRqyufP@nozomi.proxy.rlwy.net:22764...","service":"core-service","timestamp":"2025-05-18 11:38:49"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 11:38:49"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 11:38:49"}
+{"level":"error","message":"Error seeding employees: Cannot read properties of undefined (reading '_id')","service":"core-service","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at seedEmployees (D:\\sarana-erp\\apps\\core-service\\src\\config\\seeders\\employeeSeeder.js:448:70)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async runSeeder (D:\\sarana-erp\\apps\\core-service\\src\\scripts\\run-employee-seeder.js:33:5)","timestamp":"2025-05-18 11:38:50"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 11:42:59"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://mongo:HpmyPloqcCXAQdHoTRXmOGbnOYRqyufP@nozomi.proxy.rlwy.net:22764...","service":"core-service","timestamp":"2025-05-18 11:42:59"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 11:43:00"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 11:43:00"}
+{"level":"warn","message":"Division with name \"Executive Management\" not found. Using first Division as fallback.","service":"core-service","timestamp":"2025-05-18 11:43:01"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 11:44:20"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://mongo:HpmyPloqcCXAQdHoTRXmOGbnOYRqyufP@nozomi.proxy.rlwy.net:22764...","service":"core-service","timestamp":"2025-05-18 11:44:20"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 11:44:20"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 11:44:20"}
+{"level":"warn","message":"Division with name \"Executive Management\" not found. Using first Division as fallback.","service":"core-service","timestamp":"2025-05-18 11:44:22"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 11:46:12"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://mongo:HpmyPloqcCXAQdHoTRXmOGbnOYRqyufP@nozomi.proxy.rlwy.net:22764...","service":"core-service","timestamp":"2025-05-18 11:46:12"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 11:46:13"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 11:47:15"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://mongo:HpmyPloqcCXAQdHoTRXmOGbnOYRqyufP@nozomi.proxy.rlwy.net:22764...","service":"core-service","timestamp":"2025-05-18 11:47:15"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 11:47:15"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 11:49:17"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://mongo:HpmyPloqcCXAQdHoTRXmOGbnOYRqyufP@nozomi.proxy.rlwy.net:22764...","service":"core-service","timestamp":"2025-05-18 11:49:17"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 11:49:18"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 11:50:02"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://mongo:HpmyPloqcCXAQdHoTRXmOGbnOYRqyufP@nozomi.proxy.rlwy.net:22764...","service":"core-service","timestamp":"2025-05-18 11:50:02"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 11:50:03"}
+{"level":"info","message":"Starting branch seeder...","service":"core-service","timestamp":"2025-05-18 11:50:03"}
+{"level":"info","message":"Skipping branch seeder, 3 branches already exist","service":"core-service","timestamp":"2025-05-18 11:50:03"}
+{"level":"info","message":"Starting division and position seeding...","service":"core-service","timestamp":"2025-05-18 11:50:03"}
+{"level":"info","message":"Divisions already exist (8 found). Skipping division seeding.","service":"core-service","timestamp":"2025-05-18 11:50:04"}
+{"level":"info","message":"Positions already exist (8 found). Skipping position seeding.","service":"core-service","timestamp":"2025-05-18 11:50:04"}
+{"level":"info","message":"Division and position seeding completed successfully","service":"core-service","timestamp":"2025-05-18 11:50:04"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 11:50:04"}
+{"level":"warn","message":"Division with name \"Executive Management\" not found. Using first Division as fallback.","service":"core-service","timestamp":"2025-05-18 11:50:04"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 13:32:39"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 13:32:40"}
+{"level":"info","message":"::1 - - [18/May/2025:06:32:44 +0000] \"GET /api-docs/ HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 13:32:44"}
+{"level":"info","message":"::1 - - [18/May/2025:06:32:44 +0000] \"GET /api-docs/swagger-ui.css HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 13:32:44"}
+{"level":"info","message":"::1 - - [18/May/2025:06:32:44 +0000] \"GET /api-docs/swagger-ui-bundle.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 13:32:44"}
+{"level":"info","message":"::1 - - [18/May/2025:06:32:44 +0000] \"GET /api-docs/swagger-ui-init.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 13:32:44"}
+{"level":"info","message":"::1 - - [18/May/2025:06:32:44 +0000] \"GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 13:32:44"}
+{"level":"info","message":"::1 - - [18/May/2025:06:32:44 +0000] \"GET /api-docs/favicon-32x32.png HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 13:32:44"}
+{"level":"info","message":"::1 - - [18/May/2025:06:33:02 +0000] \"GET /api/employees?page=1&limit=10&status=ACTIVE&sortBy=createdAt&sortOrder=desc HTTP/1.1\" 200 126 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\"","service":"core-service","timestamp":"2025-05-18 13:33:02"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 13:33:59"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://localhost:27017/sarana-erp...","service":"core-service","timestamp":"2025-05-18 13:33:59"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 13:33:59"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 13:33:59"}
+{"level":"info","message":"Skipping employee seeder, 5 employees already exist","service":"core-service","timestamp":"2025-05-18 13:33:59"}
+{"level":"info","message":"MongoDB Connected","service":"core-service","timestamp":"2025-05-18 14:08:25"}
+{"level":"info","message":"Existing branch data cleared","service":"core-service","timestamp":"2025-05-18 14:08:25"}
+{"level":"info","message":"Head Office created: Head Office","service":"core-service","timestamp":"2025-05-18 14:08:25"}
+{"level":"info","message":"2 regional branches created","service":"core-service","timestamp":"2025-05-18 14:08:26"}
+{"level":"info","message":"Branch data import completed","service":"core-service","timestamp":"2025-05-18 14:08:26"}
+{"level":"info","message":"Service areas already seeded, skipping...","service":"core-service","timestamp":"2025-05-18 14:08:26"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 14:08:50"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://localhost:27017/sarana-erp...","service":"core-service","timestamp":"2025-05-18 14:08:50"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 14:08:50"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 14:08:50"}
+{"level":"info","message":"Skipping employee seeder, 5 employees already exist","service":"core-service","timestamp":"2025-05-18 14:08:50"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 14:18:34"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://mongo:HpmyPloqcCXAQdHoTRXmOGbnOYRqyufP@nozomi.proxy.rlwy.net:22764...","service":"core-service","timestamp":"2025-05-18 14:18:34"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 14:18:35"}
+{"level":"info","message":"Running branch seeder...","service":"core-service","timestamp":"2025-05-18 14:18:35"}
+{"level":"info","message":"Starting branch seeder...","service":"core-service","timestamp":"2025-05-18 14:18:35"}
+{"level":"info","message":"Skipping branch seeder, 3 branches already exist","service":"core-service","timestamp":"2025-05-18 14:18:37"}
+{"level":"info","message":"Branch seeder completed successfully","service":"core-service","timestamp":"2025-05-18 14:18:37"}
+{"level":"info","message":"Running divisions and positions seeder...","service":"core-service","timestamp":"2025-05-18 14:18:37"}
+{"level":"info","message":"Starting division and position seeding...","service":"core-service","timestamp":"2025-05-18 14:18:37"}
+{"level":"info","message":"Divisions already exist (8 found). Skipping division seeding.","service":"core-service","timestamp":"2025-05-18 14:18:37"}
+{"level":"info","message":"Positions already exist (8 found). Skipping position seeding.","service":"core-service","timestamp":"2025-05-18 14:18:37"}
+{"level":"info","message":"Division and position seeding completed successfully","service":"core-service","timestamp":"2025-05-18 14:18:37"}
+{"level":"info","message":"Divisions and positions seeder completed successfully","service":"core-service","timestamp":"2025-05-18 14:18:37"}
+{"level":"info","message":"Running employee seeder...","service":"core-service","timestamp":"2025-05-18 14:18:37"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 14:18:37"}
+{"level":"info","message":"Available branches: 3","service":"core-service","timestamp":"2025-05-18 14:18:38"}
+{"level":"info","message":"Available divisions: 8","service":"core-service","timestamp":"2025-05-18 14:18:38"}
+{"level":"info","message":"Available positions: 8","service":"core-service","timestamp":"2025-05-18 14:18:38"}
+{"level":"warn","message":"Position with name \"HR Manager\" not found. Using first Position as fallback.","service":"core-service","timestamp":"2025-05-18 14:18:38"}
+{"level":"warn","message":"Position with name \"HR Manager\" not found. Using first Position as fallback.","service":"core-service","timestamp":"2025-05-18 14:18:38"}
+{"level":"warn","message":"Position with name \"IT Manager\" not found. Using first Position as fallback.","service":"core-service","timestamp":"2025-05-18 14:18:38"}
+{"level":"warn","message":"Position with name \"IT Manager\" not found. Using first Position as fallback.","service":"core-service","timestamp":"2025-05-18 14:18:38"}
+{"level":"info","message":"Successfully seeded 5 employees","service":"core-service","timestamp":"2025-05-18 14:18:38"}
+{"level":"info","message":"Core service running on port 3002","service":"core-service","timestamp":"2025-05-18 14:21:37"}
+{"level":"info","message":"MongoDB Connected: nozomi.proxy.rlwy.net","service":"core-service","timestamp":"2025-05-18 14:21:37"}

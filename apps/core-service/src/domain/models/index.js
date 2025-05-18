@@ -9,6 +9,11 @@ const BranchServiceArea = require('./BranchServiceArea');
 const ServiceAreaPricing = require('./ServiceAreaPricing');
 const ServiceAreaHistory = require('./ServiceAreaHistory');
 const GeospatialPoint = require('./GeospatialPoint');
+const Division = require('./Division');
+const Position = require('./Position');
+const OrganizationalChange = require('./OrganizationalChange');
+const Employee = require('./Employee');
+const EmployeeHistory = require('./EmployeeHistory');
 
 module.exports = {
   Branch,
@@ -16,5 +21,10 @@ module.exports = {
   BranchServiceArea,
   ServiceAreaPricing,
   ServiceAreaHistory,
-  GeospatialPoint
+  GeospatialPoint,
+  Division,
+  Position,
+  OrganizationalChange,
+  Employee,
+  EmployeeHistory
 };

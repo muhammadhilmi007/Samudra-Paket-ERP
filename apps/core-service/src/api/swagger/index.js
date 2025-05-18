@@ -9,6 +9,7 @@ const path = require('path');
 
 // Import Swagger documentation
 require('./branchSwagger');
+require('./employeeSwagger');
 
 // Swagger definition
 const swaggerDefinition = {
@@ -69,7 +70,11 @@ const swaggerSpec = swaggerJsdoc(swaggerOptions);
 // Setup Swagger middleware
 const setupSwagger = (app) => {
   // Serve Swagger documentation
-  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
+    explorer: true,
+    customCss: '.swagger-ui .topbar { display: none }',
+    customSiteTitle: 'Samudra Paket ERP - Core Service API Documentation'
+  }));
   
   // Serve Swagger JSON
   app.get('/api-docs.json', (req, res) => {

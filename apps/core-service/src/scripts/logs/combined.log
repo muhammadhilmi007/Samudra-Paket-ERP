@@ -1,0 +1,165 @@
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 12:14:43"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://localhost:27017/sarana-erp...","service":"core-service","timestamp":"2025-05-18 12:14:43"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 12:14:43"}
+{"level":"info","message":"Starting branch seeder...","service":"core-service","timestamp":"2025-05-18 12:14:43"}
+{"_message":"Branch validation failed","errors":{"operationalHours.0.day":{"kind":"required","message":"Path `day` is required.","name":"ValidatorError","path":"day","properties":{"message":"Path `day` is required.","path":"day","type":"required"}}},"level":"error","message":"Error seeding branches: Branch validation failed: operationalHours.0.day: Path `day` is required.","service":"core-service","stack":"ValidationError: Branch validation failed: operationalHours.0.day: Path `day` is required.\n    at Document.invalidate (D:\\sarana-erp\\node_modules\\mongoose\\lib\\document.js:3197:32)\n    at Subdocument.invalidate (D:\\sarana-erp\\node_modules\\mongoose\\lib\\types\\subdocument.js:225:12)\n    at D:\\sarana-erp\\node_modules\\mongoose\\lib\\document.js:2985:17\n    at D:\\sarana-erp\\node_modules\\mongoose\\lib\\schematype.js:1350:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)","timestamp":"2025-05-18 12:14:43"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 12:15:54"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://localhost:27017/sarana-erp...","service":"core-service","timestamp":"2025-05-18 12:15:54"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 12:15:54"}
+{"level":"info","message":"Starting branch seeder...","service":"core-service","timestamp":"2025-05-18 12:15:54"}
+{"_message":"Branch validation failed","errors":{"operationalHours.6.closeTime":{"kind":"user defined","message":"null is not a valid time format (HH:MM)","name":"ValidatorError","path":"closeTime","properties":{"message":"null is not a valid time format (HH:MM)","path":"closeTime","type":"user defined","value":null},"value":null},"operationalHours.6.openTime":{"kind":"user defined","message":"null is not a valid time format (HH:MM)","name":"ValidatorError","path":"openTime","properties":{"message":"null is not a valid time format (HH:MM)","path":"openTime","type":"user defined","value":null},"value":null}},"level":"error","message":"Error seeding branches: Branch validation failed: operationalHours.6.openTime: null is not a valid time format (HH:MM), operationalHours.6.closeTime: null is not a valid time format (HH:MM)","service":"core-service","stack":"ValidationError: Branch validation failed: operationalHours.6.openTime: null is not a valid time format (HH:MM), operationalHours.6.closeTime: null is not a valid time format (HH:MM)\n    at Document.invalidate (D:\\sarana-erp\\node_modules\\mongoose\\lib\\document.js:3197:32)\n    at Subdocument.invalidate (D:\\sarana-erp\\node_modules\\mongoose\\lib\\types\\subdocument.js:225:12)\n    at D:\\sarana-erp\\node_modules\\mongoose\\lib\\document.js:2985:17\n    at D:\\sarana-erp\\node_modules\\mongoose\\lib\\schematype.js:1350:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)","timestamp":"2025-05-18 12:15:54"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 12:17:07"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://localhost:27017/sarana-erp...","service":"core-service","timestamp":"2025-05-18 12:17:07"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 12:17:08"}
+{"level":"info","message":"Starting branch seeder...","service":"core-service","timestamp":"2025-05-18 12:17:08"}
+{"level":"info","message":"Successfully seeded 3 branches","service":"core-service","timestamp":"2025-05-18 12:17:08"}
+{"level":"info","message":"Starting division and position seeding...","service":"core-service","timestamp":"2025-05-18 12:17:08"}
+{"level":"info","message":"Creating divisions...","service":"core-service","timestamp":"2025-05-18 12:17:08"}
+{"level":"info","message":"Divisions created successfully","service":"core-service","timestamp":"2025-05-18 12:17:08"}
+{"level":"info","message":"Creating positions...","service":"core-service","timestamp":"2025-05-18 12:17:08"}
+{"level":"info","message":"Positions created successfully","service":"core-service","timestamp":"2025-05-18 12:17:08"}
+{"level":"info","message":"Division and position seeding completed successfully","service":"core-service","timestamp":"2025-05-18 12:17:08"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 12:17:08"}
+{"level":"warn","message":"Division with name \"Executive Management\" not found. Using first Division as fallback.","service":"core-service","timestamp":"2025-05-18 12:17:08"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 12:26:44"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://localhost:27017/sarana-erp...","service":"core-service","timestamp":"2025-05-18 12:26:44"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 12:26:44"}
+{"level":"info","message":"Starting branch seeder...","service":"core-service","timestamp":"2025-05-18 12:26:44"}
+{"level":"info","message":"Skipping branch seeder, 3 branches already exist","service":"core-service","timestamp":"2025-05-18 12:26:44"}
+{"level":"info","message":"Starting division and position seeding...","service":"core-service","timestamp":"2025-05-18 12:26:44"}
+{"level":"info","message":"Divisions already exist (8 found). Skipping division seeding.","service":"core-service","timestamp":"2025-05-18 12:26:45"}
+{"level":"info","message":"Positions already exist (8 found). Skipping position seeding.","service":"core-service","timestamp":"2025-05-18 12:26:45"}
+{"level":"info","message":"Division and position seeding completed successfully","service":"core-service","timestamp":"2025-05-18 12:26:45"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 12:26:45"}
+{"level":"warn","message":"Division with name \"Executive Management\" not found. Using first Division as fallback.","service":"core-service","timestamp":"2025-05-18 12:26:45"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 12:28:42"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://localhost:27017/sarana-erp...","service":"core-service","timestamp":"2025-05-18 12:28:42"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 12:28:42"}
+{"level":"info","message":"Starting branch seeder...","service":"core-service","timestamp":"2025-05-18 12:28:42"}
+{"level":"info","message":"Skipping branch seeder, 3 branches already exist","service":"core-service","timestamp":"2025-05-18 12:28:42"}
+{"level":"info","message":"Starting division and position seeding...","service":"core-service","timestamp":"2025-05-18 12:28:42"}
+{"level":"info","message":"Divisions already exist (8 found). Skipping division seeding.","service":"core-service","timestamp":"2025-05-18 12:28:42"}
+{"level":"info","message":"Positions already exist (8 found). Skipping position seeding.","service":"core-service","timestamp":"2025-05-18 12:28:42"}
+{"level":"info","message":"Division and position seeding completed successfully","service":"core-service","timestamp":"2025-05-18 12:28:42"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 12:28:42"}
+{"level":"warn","message":"Position with name \"HR Manager\" not found. Using first Position as fallback.","service":"core-service","timestamp":"2025-05-18 12:28:43"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 12:29:57"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://localhost:27017/sarana-erp...","service":"core-service","timestamp":"2025-05-18 12:29:57"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 12:29:57"}
+{"level":"info","message":"Starting branch seeder...","service":"core-service","timestamp":"2025-05-18 12:29:57"}
+{"level":"info","message":"Skipping branch seeder, 3 branches already exist","service":"core-service","timestamp":"2025-05-18 12:29:57"}
+{"level":"info","message":"Starting division and position seeding...","service":"core-service","timestamp":"2025-05-18 12:29:57"}
+{"level":"info","message":"Divisions already exist (8 found). Skipping division seeding.","service":"core-service","timestamp":"2025-05-18 12:29:57"}
+{"level":"info","message":"Positions already exist (8 found). Skipping position seeding.","service":"core-service","timestamp":"2025-05-18 12:29:57"}
+{"level":"info","message":"Division and position seeding completed successfully","service":"core-service","timestamp":"2025-05-18 12:29:57"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 12:29:57"}
+{"level":"warn","message":"Position with name \"HR Manager\" not found. Using first Position as fallback: Chief Executive Officer","service":"core-service","timestamp":"2025-05-18 12:29:57"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 12:30:39"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://localhost:27017/sarana-erp...","service":"core-service","timestamp":"2025-05-18 12:30:39"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 12:30:39"}
+{"level":"info","message":"Starting branch seeder...","service":"core-service","timestamp":"2025-05-18 12:30:39"}
+{"level":"info","message":"Skipping branch seeder, 3 branches already exist","service":"core-service","timestamp":"2025-05-18 12:30:39"}
+{"level":"info","message":"Starting division and position seeding...","service":"core-service","timestamp":"2025-05-18 12:30:39"}
+{"level":"info","message":"Divisions already exist (8 found). Skipping division seeding.","service":"core-service","timestamp":"2025-05-18 12:30:39"}
+{"level":"info","message":"Positions already exist (8 found). Skipping position seeding.","service":"core-service","timestamp":"2025-05-18 12:30:40"}
+{"level":"info","message":"Division and position seeding completed successfully","service":"core-service","timestamp":"2025-05-18 12:30:40"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 12:30:40"}
+{"level":"error","message":"STRICT DEBUG: Position with name \"HR Manager\" not found by exact match. Returning null.","service":"core-service","timestamp":"2025-05-18 12:30:40"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 13:00:51"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://localhost:27017/sarana-erp...","service":"core-service","timestamp":"2025-05-18 13:00:51"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 13:00:51"}
+{"level":"info","message":"Starting branch seeder...","service":"core-service","timestamp":"2025-05-18 13:00:51"}
+{"level":"info","message":"Skipping branch seeder, 3 branches already exist","service":"core-service","timestamp":"2025-05-18 13:00:51"}
+{"level":"info","message":"Starting division and position seeding...","service":"core-service","timestamp":"2025-05-18 13:00:51"}
+{"level":"info","message":"Divisions already exist (8 found). Skipping division seeding.","service":"core-service","timestamp":"2025-05-18 13:00:51"}
+{"level":"info","message":"Positions already exist (8 found). Skipping position seeding.","service":"core-service","timestamp":"2025-05-18 13:00:51"}
+{"level":"info","message":"Division and position seeding completed successfully","service":"core-service","timestamp":"2025-05-18 13:00:51"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 13:00:51"}
+{"level":"info","message":"Looking for Division with name \"Executive Office\"","service":"core-service","timestamp":"2025-05-18 13:00:51"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 13:01:42"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://localhost:27017/sarana-erp...","service":"core-service","timestamp":"2025-05-18 13:01:42"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 13:01:42"}
+{"level":"info","message":"Running branch seeder...","service":"core-service","timestamp":"2025-05-18 13:01:42"}
+{"level":"info","message":"Starting branch seeder...","service":"core-service","timestamp":"2025-05-18 13:01:42"}
+{"level":"info","message":"Skipping branch seeder, 3 branches already exist","service":"core-service","timestamp":"2025-05-18 13:01:42"}
+{"level":"info","message":"Branch seeder completed successfully","service":"core-service","timestamp":"2025-05-18 13:01:42"}
+{"level":"info","message":"Running divisions and positions seeder...","service":"core-service","timestamp":"2025-05-18 13:01:42"}
+{"level":"info","message":"Starting division and position seeding...","service":"core-service","timestamp":"2025-05-18 13:01:42"}
+{"level":"info","message":"Divisions already exist (8 found). Skipping division seeding.","service":"core-service","timestamp":"2025-05-18 13:01:42"}
+{"level":"info","message":"Positions already exist (8 found). Skipping position seeding.","service":"core-service","timestamp":"2025-05-18 13:01:42"}
+{"level":"info","message":"Division and position seeding completed successfully","service":"core-service","timestamp":"2025-05-18 13:01:42"}
+{"level":"info","message":"Divisions and positions seeder completed successfully","service":"core-service","timestamp":"2025-05-18 13:01:42"}
+{"level":"info","message":"Running employee seeder...","service":"core-service","timestamp":"2025-05-18 13:01:42"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 13:01:42"}
+{"level":"info","message":"Looking for Division with name \"Executive Office\"","service":"core-service","timestamp":"2025-05-18 13:01:42"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 13:04:09"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://localhost:27017/sarana-erp...","service":"core-service","timestamp":"2025-05-18 13:04:09"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 13:04:09"}
+{"level":"info","message":"Running branch seeder...","service":"core-service","timestamp":"2025-05-18 13:04:09"}
+{"level":"info","message":"Starting branch seeder...","service":"core-service","timestamp":"2025-05-18 13:04:09"}
+{"level":"info","message":"Skipping branch seeder, 3 branches already exist","service":"core-service","timestamp":"2025-05-18 13:04:09"}
+{"level":"info","message":"Branch seeder completed successfully","service":"core-service","timestamp":"2025-05-18 13:04:09"}
+{"level":"info","message":"Running divisions and positions seeder...","service":"core-service","timestamp":"2025-05-18 13:04:09"}
+{"level":"info","message":"Starting division and position seeding...","service":"core-service","timestamp":"2025-05-18 13:04:09"}
+{"level":"info","message":"Divisions already exist (8 found). Skipping division seeding.","service":"core-service","timestamp":"2025-05-18 13:04:09"}
+{"level":"info","message":"Positions already exist (8 found). Skipping position seeding.","service":"core-service","timestamp":"2025-05-18 13:04:09"}
+{"level":"info","message":"Division and position seeding completed successfully","service":"core-service","timestamp":"2025-05-18 13:04:09"}
+{"level":"info","message":"Divisions and positions seeder completed successfully","service":"core-service","timestamp":"2025-05-18 13:04:09"}
+{"level":"info","message":"Running employee seeder...","service":"core-service","timestamp":"2025-05-18 13:04:09"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 13:04:09"}
+{"level":"warn","message":"Position with name \"HR Manager\" not found. Using first Position as fallback.","service":"core-service","timestamp":"2025-05-18 13:04:09"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 13:05:17"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://localhost:27017/sarana-erp...","service":"core-service","timestamp":"2025-05-18 13:05:17"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 13:05:17"}
+{"level":"info","message":"Running branch seeder...","service":"core-service","timestamp":"2025-05-18 13:05:17"}
+{"level":"info","message":"Starting branch seeder...","service":"core-service","timestamp":"2025-05-18 13:05:17"}
+{"level":"info","message":"Skipping branch seeder, 3 branches already exist","service":"core-service","timestamp":"2025-05-18 13:05:17"}
+{"level":"info","message":"Branch seeder completed successfully","service":"core-service","timestamp":"2025-05-18 13:05:17"}
+{"level":"info","message":"Running divisions and positions seeder...","service":"core-service","timestamp":"2025-05-18 13:05:17"}
+{"level":"info","message":"Starting division and position seeding...","service":"core-service","timestamp":"2025-05-18 13:05:17"}
+{"level":"info","message":"Divisions already exist (8 found). Skipping division seeding.","service":"core-service","timestamp":"2025-05-18 13:05:17"}
+{"level":"info","message":"Positions already exist (8 found). Skipping position seeding.","service":"core-service","timestamp":"2025-05-18 13:05:17"}
+{"level":"info","message":"Division and position seeding completed successfully","service":"core-service","timestamp":"2025-05-18 13:05:17"}
+{"level":"info","message":"Divisions and positions seeder completed successfully","service":"core-service","timestamp":"2025-05-18 13:05:17"}
+{"level":"info","message":"Running employee seeder...","service":"core-service","timestamp":"2025-05-18 13:05:17"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 13:05:17"}
+{"level":"info","message":"Available branches: 3","service":"core-service","timestamp":"2025-05-18 13:05:17"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 13:05:53"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://localhost:27017/sarana-erp...","service":"core-service","timestamp":"2025-05-18 13:05:53"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 13:05:53"}
+{"level":"info","message":"Running branch seeder...","service":"core-service","timestamp":"2025-05-18 13:05:53"}
+{"level":"info","message":"Starting branch seeder...","service":"core-service","timestamp":"2025-05-18 13:05:53"}
+{"level":"info","message":"Skipping branch seeder, 3 branches already exist","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"info","message":"Branch seeder completed successfully","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"info","message":"Running divisions and positions seeder...","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"info","message":"Starting division and position seeding...","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"info","message":"Divisions already exist (8 found). Skipping division seeding.","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"info","message":"Positions already exist (8 found). Skipping position seeding.","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"info","message":"Division and position seeding completed successfully","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"info","message":"Divisions and positions seeder completed successfully","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"info","message":"Running employee seeder...","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"info","message":"Available branches: 3","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"info","message":"Available divisions: 8","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"info","message":"Available positions: 8","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"warn","message":"Position with name \"HR Manager\" not found. Using first Position as fallback.","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"warn","message":"Position with name \"HR Manager\" not found. Using first Position as fallback.","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"warn","message":"Position with name \"IT Manager\" not found. Using first Position as fallback.","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"warn","message":"Position with name \"IT Manager\" not found. Using first Position as fallback.","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"info","message":"Successfully seeded 5 employees","service":"core-service","timestamp":"2025-05-18 13:05:54"}
+{"level":"info","message":"Starting all seeders...","service":"core-service","timestamp":"2025-05-18 13:33:35"}
+{"level":"info","message":"Connecting to MongoDB at mongodb://localhost:27017/sarana-erp...","service":"core-service","timestamp":"2025-05-18 13:33:35"}
+{"level":"info","message":"Connected to MongoDB","service":"core-service","timestamp":"2025-05-18 13:33:35"}
+{"level":"info","message":"Running branch seeder...","service":"core-service","timestamp":"2025-05-18 13:33:35"}
+{"level":"info","message":"Starting branch seeder...","service":"core-service","timestamp":"2025-05-18 13:33:35"}
+{"level":"info","message":"Skipping branch seeder, 3 branches already exist","service":"core-service","timestamp":"2025-05-18 13:33:35"}
+{"level":"info","message":"Branch seeder completed successfully","service":"core-service","timestamp":"2025-05-18 13:33:35"}
+{"level":"info","message":"Running divisions and positions seeder...","service":"core-service","timestamp":"2025-05-18 13:33:35"}
+{"level":"info","message":"Starting division and position seeding...","service":"core-service","timestamp":"2025-05-18 13:33:35"}
+{"level":"info","message":"Divisions already exist (8 found). Skipping division seeding.","service":"core-service","timestamp":"2025-05-18 13:33:35"}
+{"level":"info","message":"Positions already exist (8 found). Skipping position seeding.","service":"core-service","timestamp":"2025-05-18 13:33:35"}
+{"level":"info","message":"Division and position seeding completed successfully","service":"core-service","timestamp":"2025-05-18 13:33:35"}
+{"level":"info","message":"Divisions and positions seeder completed successfully","service":"core-service","timestamp":"2025-05-18 13:33:35"}
+{"level":"info","message":"Running employee seeder...","service":"core-service","timestamp":"2025-05-18 13:33:35"}
+{"level":"info","message":"Starting employee seeder...","service":"core-service","timestamp":"2025-05-18 13:33:35"}
+{"level":"info","message":"Skipping employee seeder, 5 employees already exist","service":"core-service","timestamp":"2025-05-18 13:33:35"}

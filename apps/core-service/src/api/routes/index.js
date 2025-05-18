@@ -12,6 +12,10 @@ const serviceAreaRoutes = require('./serviceAreaRoutes');
 const serviceAreaAssignmentRoutes = require('./serviceAreaAssignmentRoutes');
 const serviceAreaPricingRoutes = require('./serviceAreaPricingRoutes');
 const serviceAreaGeospatialRoutes = require('./serviceAreaGeospatialRoutes');
+const divisionRoutes = require('./divisionRoutes');
+const positionRoutes = require('./positionRoutes');
+const organizationalChangeRoutes = require('./organizationalChangeRoutes');
+const employeeRoutes = require('./employeeRoutes');
 
 // Register routes
 router.use('/branches', branchRoutes);
@@ -19,6 +23,10 @@ router.use('/service-areas', serviceAreaRoutes);
 router.use('/service-area-assignments', serviceAreaAssignmentRoutes);
 router.use('/service-area-pricing', serviceAreaPricingRoutes);
 router.use('/service-areas/geospatial', serviceAreaGeospatialRoutes);
+router.use('/divisions', divisionRoutes);
+router.use('/positions', positionRoutes);
+router.use('/organizational-changes', organizationalChangeRoutes);
+router.use('/employees', employeeRoutes);
 
 // Health check endpoint
 router.get('/health', (req, res) => {
