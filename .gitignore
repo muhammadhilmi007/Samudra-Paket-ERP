@@ -2,3 +2,5 @@ node_modules
 
 # Turborepo
 .turbo
+
+*storybook.log

@@ -1,0 +1,85 @@
+{
+  "app": {
+    "name": "Samudra Paket ERP",
+    "tagline": "Integrated Logistics Management System",
+    "company": "PT. Sarana Mudah Raya"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "shipments": "Shipments",
+    "customers": "Customers",
+    "finance": "Finance",
+    "reports": "Reports",
+    "settings": "Settings",
+    "logout": "Logout",
+    "profile": "Profile",
+    "help": "Help"
+  },
+  "actions": {
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "search": "Search",
+    "filter": "Filter",
+    "view": "View",
+    "download": "Download",
+    "upload": "Upload",
+    "print": "Print",
+    "export": "Export",
+    "import": "Import",
+    "refresh": "Refresh",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "status": {
+    "loading": "Loading...",
+    "success": "Success",
+    "error": "An error occurred",
+    "empty": "No data available",
+    "offline": "You are offline",
+    "online": "You are back online"
+  },
+  "errors": {
+    "required": "Required field",
+    "invalidEmail": "Invalid email address",
+    "invalidPhone": "Invalid phone number",
+    "minLength": "Minimum {{count}} characters",
+    "maxLength": "Maximum {{count}} characters",
+    "passwordMismatch": "Passwords do not match",
+    "serverError": "Server error occurred",
+    "networkError": "Network error, check your connection",
+    "unauthorized": "Unauthorized access",
+    "forbidden": "Access denied",
+    "notFound": "Not found"
+  },
+  "time": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "tomorrow": "Tomorrow",
+    "days": "days",
+    "weeks": "weeks",
+    "months": "months",
+    "years": "years",
+    "ago": "ago",
+    "in": "in"
+  },
+  "table": {
+    "rowsPerPage": "Rows per page:",
+    "of": "of",
+    "noResults": "No results found",
+    "loading": "Loading data..."
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "language": {
+    "id": "Bahasa Indonesia",
+    "en": "English"
+  }
+}

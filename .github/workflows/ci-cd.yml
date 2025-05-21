@@ -16,14 +16,14 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '22'
-          cache: 'yarn'
+          cache: 'npm'
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
       - name: Run linting
-        run: yarn lint
+        run: npm run lint
 
   test:
-    name: Test
+    name: Unit Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -31,59 +31,122 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '22'
-          cache: 'yarn'
+          cache: 'npm'
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
       - name: Run tests
-        run: yarn test
+        run: npm test
       - name: Upload coverage reports
         uses: codecov/codecov-action@v3
+        
+  e2e-test:
+    name: End-to-End Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Cypress
+        run: cd apps/web && npm install cypress @testing-library/cypress cypress-axe start-server-and-test
+      - name: Run Cypress tests
+        uses: cypress-io/github-action@v6
+        with:
+          working-directory: apps/web
+          build: npm run build
+          start: npm start
+          wait-on: 'http://localhost:3000'
+      - name: Upload Cypress screenshots
+        uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: apps/web/cypress/screenshots
+          if-no-files-found: ignore
+          
+  lighthouse:
+    name: Lighthouse Performance Audit
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifacts
+          path: apps/web
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli@0.13.x
+      - name: Start web server
+        run: cd apps/web && npm start & npx wait-on http://localhost:3000
+      - name: Run Lighthouse CI
+        run: lhci autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+      - name: Upload Lighthouse results
+        uses: actions/upload-artifact@v3
+        with:
+          name: lighthouse-results
+          path: .lighthouseci
 
   build:
     name: Build
     runs-on: ubuntu-latest
-    needs: [lint, test]
+    needs: [lint, test, e2e-test]
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '22'
-          cache: 'yarn'
+          cache: 'npm'
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
-      - name: Build packages
-        run: yarn build
+        run: npm ci
+      - name: Build web application
+        run: cd apps/web && npm run build
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
         with:
           name: build-artifacts
           path: |
-            apps/*/dist
-            apps/*/.next
-            packages/*/dist
+            apps/web/.next
+            apps/web/public
 
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
     needs: [build]
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/development'
+    environment:
+      name: ${{ github.ref == 'refs/heads/main' && 'production' || 'development' }}
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '22'
-          cache: 'yarn'
+          cache: 'npm'
       - name: Install Railway CLI
         run: npm install -g @railway/cli
       - name: Download build artifacts
         uses: actions/download-artifact@v3
         with:
           name: build-artifacts
+          path: apps/web
       - name: Deploy to Railway
-        run: railway up
+        run: cd apps/web && railway up
         env:
-          RAILWAY_TOKEN: ace027f7-788a-4132-ab3d-56a98a2a31be
+          RAILWAY_TOKEN: 4b407c07-b60b-45a2-9f38-a4499081451d
           RAILWAY_PROJECT_ID: 642f1178-1ca2-4d17-ab4d-e39eefbcdd1a
           RAILWAY_ENVIRONMENT: ${{ github.ref == 'refs/heads/main' && 'production' || 'development' }}

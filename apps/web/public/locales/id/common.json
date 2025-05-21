@@ -1,0 +1,85 @@
+{
+  "app": {
+    "name": "Samudra Paket ERP",
+    "tagline": "Sistem Manajemen Logistik Terpadu",
+    "company": "PT. Sarana Mudah Raya"
+  },
+  "navigation": {
+    "dashboard": "Dasbor",
+    "shipments": "Pengiriman",
+    "customers": "Pelanggan",
+    "finance": "Keuangan",
+    "reports": "Laporan",
+    "settings": "Pengaturan",
+    "logout": "Keluar",
+    "profile": "Profil",
+    "help": "Bantuan"
+  },
+  "actions": {
+    "add": "Tambah",
+    "edit": "Edit",
+    "delete": "Hapus",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "confirm": "Konfirmasi",
+    "search": "Cari",
+    "filter": "Filter",
+    "view": "Lihat",
+    "download": "Unduh",
+    "upload": "Unggah",
+    "print": "Cetak",
+    "export": "Ekspor",
+    "import": "Impor",
+    "refresh": "Segarkan",
+    "back": "Kembali",
+    "next": "Selanjutnya",
+    "previous": "Sebelumnya"
+  },
+  "status": {
+    "loading": "Memuat...",
+    "success": "Berhasil",
+    "error": "Terjadi kesalahan",
+    "empty": "Tidak ada data",
+    "offline": "Anda sedang offline",
+    "online": "Anda kembali online"
+  },
+  "errors": {
+    "required": "Wajib diisi",
+    "invalidEmail": "Email tidak valid",
+    "invalidPhone": "Nomor telepon tidak valid",
+    "minLength": "Minimal {{count}} karakter",
+    "maxLength": "Maksimal {{count}} karakter",
+    "passwordMismatch": "Kata sandi tidak cocok",
+    "serverError": "Terjadi kesalahan pada server",
+    "networkError": "Kesalahan jaringan, periksa koneksi Anda",
+    "unauthorized": "Tidak memiliki akses",
+    "forbidden": "Akses ditolak",
+    "notFound": "Tidak ditemukan"
+  },
+  "time": {
+    "today": "Hari ini",
+    "yesterday": "Kemarin",
+    "tomorrow": "Besok",
+    "days": "hari",
+    "weeks": "minggu",
+    "months": "bulan",
+    "years": "tahun",
+    "ago": "yang lalu",
+    "in": "dalam"
+  },
+  "table": {
+    "rowsPerPage": "Baris per halaman:",
+    "of": "dari",
+    "noResults": "Tidak ada hasil yang ditemukan",
+    "loading": "Memuat data..."
+  },
+  "theme": {
+    "light": "Terang",
+    "dark": "Gelap",
+    "system": "Sistem"
+  },
+  "language": {
+    "id": "Bahasa Indonesia",
+    "en": "English"
+  }
+}

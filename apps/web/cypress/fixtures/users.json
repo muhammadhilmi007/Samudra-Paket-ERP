@@ -1,0 +1,26 @@
+{
+  "admin": {
+    "email": "admin@samudrapaket.com",
+    "password": "Password123!",
+    "role": "admin",
+    "name": "Admin User"
+  },
+  "manager": {
+    "email": "manager@samudrapaket.com",
+    "password": "Password123!",
+    "role": "manager",
+    "name": "Manager User"
+  },
+  "courier": {
+    "email": "courier@samudrapaket.com",
+    "password": "Password123!",
+    "role": "courier",
+    "name": "Courier User"
+  },
+  "customer": {
+    "email": "customer@example.com",
+    "password": "Password123!",
+    "role": "customer",
+    "name": "Customer User"
+  }
+}

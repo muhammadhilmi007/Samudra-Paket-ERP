@@ -162,6 +162,8 @@ Checklist ini disusun berdasarkan fase implementasi (Backend → Frontend → Mo
 - [x] Integration testing untuk authentication endpoints
 - [x] Implementasi API documentation dengan Swagger/OpenAPI
 - [x] Implementasi API documentation dengan Postman
+- [ ] Sinkronkan dan integrasikan dengan auth-service dan api-gateway
+- [ ] Sinkronkan dan integrasikan dengan Management Service lainnya
 - [x] Buatkan Seeder untuk user dan role admin
 
 #### Role & Authorization Service
@@ -203,6 +205,8 @@ Checklist ini disusun berdasarkan fase implementasi (Backend → Frontend → Mo
 - [x] Integration testing untuk role and permission management
 - [x] Implementasi API documentation dengan Swagger/OpenAPI
 - [x] Implementasi API documentation dengan Postman
+- [ ] Sinkronkan dan integrasikan dengan auth-service dan api-gateway
+- [ ] Sinkronkan dan integrasikan dengan Management Service lainnya
 - [x] Implementasi seeder untuk role admin
 
 ### C. Backend: Modul Manajemen Cabang & Divisi (Core-Service)
@@ -223,6 +227,8 @@ Checklist ini disusun berdasarkan fase implementasi (Backend → Frontend → Mo
 - [x] Integration testing untuk branch API endpoints
 - [x] Implementasi API documentation dengan Swagger
 - [x] Implementasi API documentation dengan Postman
+- [ ] Sinkronkan dan integrasikan dengan auth-service dan api-gateway
+- [ ] Sinkronkan dan integrasikan dengan Management Service lainnya
 - [x] Implementasi seeder untuk branch
 
 #### Service Area Management
@@ -260,6 +266,8 @@ Checklist ini disusun berdasarkan fase implementasi (Backend → Frontend → Mo
 - [x] Unit testing untuk service area functionality
 - [x] Implementasi API documentation dengan Swagger
 - [x] Implementasi API documentation dengan Postman
+- [ ] Sinkronkan dan integrasikan dengan auth-service dan api-gateway
+- [ ] Sinkronkan dan integrasikan dengan Management Service lainnya
 - [x] Implementasi seeder untuk service area
 
 #### Planned for Future Enhancement
@@ -285,6 +293,8 @@ Checklist ini disusun berdasarkan fase implementasi (Backend → Frontend → Mo
 - [x] Integration testing untuk organization structure API endpoints
 - [x] Implementasi API documentation dengan Swagger
 - [x] Implementasi API documentation dengan Postman
+- [ ] Sinkronkan dan integrasikan dengan auth-service dan api-gateway
+- [ ] Sinkronkan dan integrasikan dengan Management Service lainnya
 - [x] Implementasi seeder untuk divisions dan positions
 
 #### Forwarder Management Service (Planned for Future Enhancement)
@@ -358,63 +368,67 @@ Checklist ini disusun berdasarkan fase implementasi (Backend → Frontend → Mo
 
 #### Frontend Setup & Configuration
 
-- [ ] Setup Next.js project structure berdasarkan App Router dengan Atomic Design methodology (atoms, molecules, organisms, templates, pages)
-  - [ ] Struktur direktori untuk components, hooks, lib, pages, services, store, styles, dan types
-  - [ ] Setup folder struktur untuk atoms (Button, Input, Icon, Typography, etc.)
-  - [ ] Setup folder struktur untuk molecules (Form, Card, Modal, Dropdown, etc.)
-  - [ ] Setup folder struktur untuk organisms (Header, Footer, Sidebar, DataTable, etc.)
-  - [ ] Setup folder struktur untuk templates (AuthLayout, DashboardLayout, etc.)
-  - [ ] Setup folder struktur untuk pages (auth, dashboard, shipments, etc.)
-- [ ] Implementasi basic layout components dengan responsive design
-  - [ ] Implementasi layout components dengan Flexbox dan Grid
-  - [ ] Implementasi container components dengan proper spacing
-- [ ] Konfigurasi routing dengan Next.js dengan dynamic routes
-  - [ ] Implementasi route structure berdasarkan aplikasi flow
-  - [ ] Implementasi dynamic routes untuk resource details
-- [ ] Setup state management dengan Redux Toolkit (slices, createAsyncThunk, selectors)
-  - [ ] Implementasi store configuration dengan proper middleware
-  - [ ] Implementasi slices untuk auth, users, branches, etc.
-  - [ ] Implementasi selectors dengan memoization
+- [x] Setup Next.js project structure berdasarkan App Router dengan Atomic Design methodology (atoms, molecules, organisms, templates, pages)
+  - [x] Struktur direktori untuk components, hooks, lib, pages, services, store, styles, dan types
+  - [x] Setup folder struktur untuk atoms (Button, Input, Icon, Typography, etc.)
+  - [x] Setup folder struktur untuk molecules (Form, Card, Modal, Dropdown, etc.)
+  - [x] Setup folder struktur untuk organisms (Header, Footer, Sidebar, DataTable, etc.)
+  - [x] Setup folder struktur untuk templates (AuthLayout, DashboardLayout, etc.)
+  - [x] Setup folder struktur untuk pages (auth, dashboard, shipments, etc.)
+- [x] Implementasi basic layout components dengan responsive design
+  - [x] Implementasi layout components dengan Flexbox dan Grid
+  - [x] Implementasi container components dengan proper spacing
+- [x] Konfigurasi routing dengan Next.js dengan dynamic routes
+  - [x] Implementasi route structure berdasarkan aplikasi flow
+  - [x] Implementasi dynamic routes untuk resource details
+- [x] Setup state management dengan Redux Toolkit (slices, createAsyncThunk, selectors)
+  - [x] Implementasi store configuration dengan proper middleware
+  - [x] Implementasi slices untuk auth, users, branches, etc.
+  - [x] Implementasi selectors dengan memoization
 - [ ] Implementasi Redux Persist untuk offline state persistence
   - [ ] Konfigurasi storage adapter dan serialization
   - [ ] Implementasi selective persistence untuk sensitive data
-- [ ] Implementasi API service layer dengan Axios dan interceptors
-  - [ ] Implementasi base API client dengan proper configuration
-  - [ ] Implementasi request/response interceptors
-  - [ ] Implementasi error handling dan retry logic
-- [ ] Implementasi React Query untuk server state management
-  - [ ] Setup query client dengan proper defaults
-  - [ ] Implementasi query hooks untuk data fetching
-  - [ ] Implementasi mutation hooks untuk data updates
-- [ ] Konfigurasi styling dengan Tailwind CSS dan custom color palette
-  - [ ] Setup Tailwind configuration dengan custom theme
-  - [ ] Implementasi design tokens untuk colors, spacing, typography
-- [ ] Implementasi Shadcn UI components dengan custom theme
-  - [ ] Customization untuk brand colors dan styling
-  - [ ] Integration dengan existing component library
-- [ ] Implementasi responsive design foundation dengan mobile-first approach
-  - [ ] Implementasi breakpoints untuk mobile, tablet, desktop
-  - [ ] Implementasi responsive utilities dan helpers
-- [ ] Implementasi dark mode support dengan Tailwind
-  - [ ] Setup color scheme detection dan preference
-  - [ ] Implementasi theme switching functionality
-- [ ] Setup component documentation dengan Storybook
-  - [ ] Configuration untuk component stories
-  - [ ] Documentation untuk component usage dan props
-- [ ] Implementasi accessibility standards (WCAG 2.1 Level AA)
-  - [ ] Implementasi proper semantic HTML
-  - [ ] Implementasi keyboard navigation support
-  - [ ] Implementasi screen reader compatibility
-- [ ] Setup internationalization dengan i18next (Indonesian/English)
-  - [ ] Setup translation files dan namespaces
-  - [ ] Implementasi language switching functionality
-- [ ] Implementasi error boundaries dan fallback UI
-  - [ ] Implementasi global error boundary
-  - [ ] Implementasi component-level error boundaries
-  - [ ] Implementasi error reporting dan logging
-- [ ] Setup performance monitoring dengan Core Web Vitals
-  - [ ] Implementasi performance measurement
-  - [ ] Implementasi reporting dan analytics
+- [x] Implementasi API service layer dengan Axios dan interceptors
+  - [x] Implementasi base API client dengan proper configuration
+  - [x] Implementasi request/response interceptors
+  - [x] Implementasi error handling dan retry logic
+- [x] Implementasi React Query untuk server state management
+  - [x] Setup query client dengan proper defaults
+  - [x] Implementasi query hooks untuk data fetching
+  - [x] Implementasi mutation hooks untuk data updates
+- [x] Konfigurasi styling dengan Tailwind CSS dan custom color palette
+  - [x] Setup Tailwind configuration dengan custom theme
+  - [x] Implementasi design tokens untuk colors, spacing, typography
+- [x] Implementasi Shadcn UI components dengan custom theme
+  - [x] Customization untuk brand colors dan styling
+  - [x] Integration dengan existing component library
+- [x] Implementasi responsive design foundation dengan mobile-first approach
+  - [x] Implementasi breakpoints untuk mobile, tablet, desktop
+  - [x] Implementasi responsive utilities dan helpers
+- [x] Implementasi dark mode support dengan Tailwind
+  - [x] Setup color scheme detection dan preference
+  - [x] Implementasi theme switching functionality
+- [x] Setup component documentation dengan Storybook
+  - [x] Configuration untuk component stories
+  - [x] Documentation untuk component usage dan props
+- [x] Implementasi accessibility standards (WCAG 2.1 Level AA)
+  - [x] Implementasi proper semantic HTML
+  - [x] Implementasi keyboard navigation support
+  - [x] Implementasi screen reader compatibility
+- [x] Setup internationalization dengan i18next (Indonesian/English)
+  - [x] Setup translation files dan namespaces
+  - [x] Implementasi language switching functionality
+- [x] Implementasi error boundaries dan fallback UI
+  - [x] Implementasi global error boundary
+  - [x] Implementasi component-level error boundaries
+  - [x] Implementasi error reporting dan logging
+- [x] Setup performance monitoring dengan Core Web Vitals
+  - [x] Implementasi performance measurement
+  - [x] Implementasi reporting dan analytics
+- [x] Implementasi API service layer dengan Axios dan interceptors
+  - [x] Implementasi base API client dengan proper configuration
+  - [x] Sinkronkan dan integrasikan web dengan api-gateway, auth-service dan core-service 
+- [ ] Sinkronkan dan integrasikan dengan Management Service lainnya
 
 #### Authentication UI
 

@@ -13,7 +13,7 @@ let redisConnected = false;
 // Create Redis client with connection handling
 try {
   redisClient = redis.createClient({
-    url: process.env.REDIS_URL || 'redis://localhost:6379'
+    url: process.env.REDIS_URL || 'redis://default:KpJvwiHgufgzaiZEYCyNAgSRjiJJXgQE@yamabiko.proxy.rlwy.net:59026'
   });
   
   redisClient.on('error', (err) => {
