@@ -1,6 +1,7 @@
 /**
  * Accessibility E2E Tests
- * Tests WCAG 2.1 Level AA compliance for critical pages
+ * Tests WCAG 2.1 Level AA compliance for critical pages and components
+ * Implements comprehensive accessibility testing with axe-core
  */
 
 describe('Accessibility', () => {

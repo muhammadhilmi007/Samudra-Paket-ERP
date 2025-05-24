@@ -6,7 +6,7 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
 // Import the client-side Providers wrapper component
-import Providers from '../providers';
+import Providers from '../components/providers/Providers';
 
 // Load Inter font with Latin subset
 const inter = Inter({ subsets: ['latin'] });

@@ -3,7 +3,7 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useDropzone } from 'react-dropzone';
-import { XMarkIcon, PaperClipIcon, CloudArrowUpIcon, ExclamationCircleIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
+import { PaperClipIcon, CloudArrowUpIcon, ExclamationCircleIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 import { TrashIcon, ArrowDownTrayIcon } from '@heroicons/react/20/solid';
 import cn from 'classnames';
 import { v4 as uuidv4 } from 'uuid';

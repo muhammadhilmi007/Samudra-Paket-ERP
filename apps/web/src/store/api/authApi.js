@@ -95,6 +95,75 @@ export const authApi = apiSlice.injectEndpoints({
       }),
       invalidatesTags: ['User'],
     }),
+    
+    // Login history and session management
+    getLoginHistory: builder.query({
+      query: () => '/auth/login-history',
+      providesTags: ['LoginHistory'],
+    }),
+    
+    terminateSession: builder.mutation({
+      query: (sessionId) => ({
+        url: `/auth/sessions/${sessionId}`,
+        method: 'DELETE',
+      }),
+      invalidatesTags: ['LoginHistory'],
+    }),
+    
+    // Security settings
+    getSecuritySettings: builder.query({
+      query: () => '/auth/security-settings',
+      providesTags: ['SecuritySettings'],
+    }),
+    
+    updateSecuritySettings: builder.mutation({
+      query: (settings) => ({
+        url: '/auth/security-settings',
+        method: 'PATCH',
+        body: settings,
+      }),
+      invalidatesTags: ['SecuritySettings'],
+    }),
+    
+    // Trusted devices
+    getTrustedDevices: builder.query({
+      query: () => '/auth/trusted-devices',
+      providesTags: ['TrustedDevices'],
+    }),
+    
+    removeTrustedDevice: builder.mutation({
+      query: (deviceId) => ({
+        url: `/auth/trusted-devices/${deviceId}`,
+        method: 'DELETE',
+      }),
+      invalidatesTags: ['TrustedDevices'],
+    }),
+    
+    // Two-factor authentication
+    setupTwoFactor: builder.mutation({
+      query: (data) => ({
+        url: '/auth/two-factor/setup',
+        method: 'POST',
+        body: data,
+      }),
+    }),
+    
+    verifyTwoFactor: builder.mutation({
+      query: (code) => ({
+        url: '/auth/two-factor/verify',
+        method: 'POST',
+        body: { code },
+      }),
+      invalidatesTags: ['SecuritySettings', 'User'],
+    }),
+    
+    disableTwoFactor: builder.mutation({
+      query: () => ({
+        url: '/auth/two-factor/disable',
+        method: 'POST',
+      }),
+      invalidatesTags: ['SecuritySettings', 'User'],
+    }),
   }),
 });
 
@@ -108,4 +177,13 @@ export const {
   useChangePasswordMutation,
   useGetProfileQuery,
   useUpdateProfileMutation,
+  useGetLoginHistoryQuery,
+  useTerminateSessionMutation,
+  useGetSecuritySettingsQuery,
+  useUpdateSecuritySettingsMutation,
+  useGetTrustedDevicesQuery,
+  useRemoveTrustedDeviceMutation,
+  useSetupTwoFactorMutation,
+  useVerifyTwoFactorMutation,
+  useDisableTwoFactorMutation,
 } = authApi;

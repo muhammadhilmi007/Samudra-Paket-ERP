@@ -9,13 +9,13 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { uiActions } from '../../store/index';
 import { useTranslation } from '../../hooks/useTranslation';
-import { Button } from '../ui/button';
+import { Button } from '../atoms/Button';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '../ui/dropdown-menu';
+} from '../molecules/Dropdown';
 import { Sun, Moon, Monitor } from 'lucide-react';
 import { THEMES } from '../../utils/themeUtils';
 

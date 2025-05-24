@@ -1,6 +1,7 @@
 /**
  * Authentication Flow E2E Tests
  * Tests login, protected routes, and logout functionality
+ * Implements comprehensive end-to-end testing for user authentication flows
  */
 
 describe('Authentication Flow', () => {

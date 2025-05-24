@@ -29,7 +29,8 @@ import { hasRole } from '../../utils/authUtils';
  */
 const withAuth = (
   Component,
-  { requiredRoles = null, redirectUrl = '/auth/login' } = {}
+  requiredRoles = null,
+  redirectUrl = '/auth/login'
 ) => {
   const ProtectedRoute = (props) => {
     // Use Redux selectors instead of useAuth hook
@@ -71,7 +72,7 @@ const withAuth = (
     }
 
     // If role check is required and user doesn't have the required role, show permission denied
-    if (requiredRoles && !hasRole(requiredRoles)) {
+    if (requiredRoles && !hasRole(user, requiredRoles)) {
       return (
         <div className="flex flex-col items-center justify-center min-h-screen px-4">
           <svg
@@ -112,4 +113,5 @@ const withAuth = (
   return ProtectedRoute;
 };
 
+export { withAuth };
 export default withAuth;

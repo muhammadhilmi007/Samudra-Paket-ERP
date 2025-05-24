@@ -6,9 +6,15 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query';
 import { persistStore, persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from 'redux-persist';
+import offlineMiddleware from './middleware/offlineMiddleware';
 
 // Import persist configuration
-import { rootPersistConfig, authPersistConfig } from './persistConfig';
+import { 
+  rootPersistConfig, 
+  authPersistConfig, 
+  financePersistConfig, 
+  shipmentPersistConfig 
+} from './persistConfig';
 
 // Import reducers
 import authReducer from './slices/authSlice';
@@ -23,17 +29,19 @@ import settingsReducer from './slices/settingsSlice';
 import { apiSlice } from './api/apiSlice';
 import initializeStore from './storeInitializer';
 
-// Create a persisted auth reducer with its own configuration
+// Create persisted reducers with their own configurations
 const persistedAuthReducer = persistReducer(authPersistConfig, authReducer);
+const persistedShipmentReducer = persistReducer(shipmentPersistConfig, shipmentReducer);
+const persistedFinanceReducer = persistReducer(financePersistConfig, financeReducer);
 
 // Combine all reducers
 const combinedReducers = combineReducers({
   // Feature slices with persistence
   auth: persistedAuthReducer,
   ui: uiReducer,
-  shipment: shipmentReducer,
+  shipment: persistedShipmentReducer,
   customer: customerReducer,
-  finance: financeReducer,
+  finance: persistedFinanceReducer,
   user: userReducer,
   settings: settingsReducer,
   
@@ -67,7 +75,9 @@ export const store = configureStore({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
-    }).concat(apiSlice.middleware),
+    })
+    .concat(apiSlice.middleware)
+    .concat(offlineMiddleware),
   devTools: process.env.NODE_ENV !== 'production',
 });
 

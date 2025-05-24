@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { CalendarIcon, FunnelIcon, ArrowDownTrayIcon } from '@heroicons/react/24/outline';
 import { LineChart, BarChart } from '../../organisms/Chart';
-import Table from '../../organisms/Table';
+import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from '../../ui/table';
 import { DatePicker } from '../../molecules/DatePicker/index';
 import Button from '../../atoms/Button';
 import Input from '../../atoms/Input';

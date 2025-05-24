@@ -2,10 +2,13 @@
 
 /**
  * API Slice
- * RTK Query API definition for handling API requests
+ * RTK Query API definition for handling API requests with offline support
  */
 
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { isRejectedWithValue } from '@reduxjs/toolkit';
+import apiClientWithOffline from '../../utils/apiClientWithOffline';
+import { offlineQueue } from '../../utils/offlineQueue';
 
 // Define the base URL for API requests
 const baseUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3003/api';
@@ -25,6 +28,41 @@ const baseQuery = fetchBaseQuery({
     return headers;
   },
   credentials: 'include', // Include cookies in the requests
+  fetchFn: async (input, init) => {
+    // Check if offline
+    if (typeof navigator !== 'undefined' && !navigator.onLine) {
+      // For mutations, use the offline-enabled API client
+      if (init.method !== 'GET') {
+        try {
+          // Convert fetch request to axios format
+          const url = typeof input === 'string' ? input : input.url;
+          const response = await apiClientWithOffline({
+            url: url.replace(baseUrl, ''),
+            method: init.method,
+            data: init.body ? JSON.parse(init.body) : undefined,
+            headers: init.headers,
+          });
+          
+          // Convert axios response to fetch response format
+          return new Response(JSON.stringify(response.data), {
+            status: response.status,
+            statusText: response.statusText,
+            headers: response.headers,
+          });
+        } catch (error) {
+          console.error('Offline API request error:', error);
+          // Return a failed response
+          return new Response(JSON.stringify({ error: 'Offline operation failed' }), {
+            status: 503,
+            statusText: 'Service Unavailable (Offline)',
+          });
+        }
+      }
+    }
+    
+    // Online or GET request: use default fetch
+    return fetch(input, init);
+  },
 });
 
 // Create the API slice - export as empty API first to avoid circular dependencies

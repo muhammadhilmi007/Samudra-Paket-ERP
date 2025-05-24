@@ -8,7 +8,7 @@ import Input from '../../atoms/Input';
 import Select from '../../atoms/Select';
 import Checkbox from '../../atoms/Checkbox';
 import Radio from '../../atoms/Radio';
-import TextArea from '../../atoms/TextArea';
+import TextArea from '../../atoms/Textarea';
 import DatePicker from '../../molecules/DatePicker';
 import FileUpload from '../../molecules/FileUpload';
 
